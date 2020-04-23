@@ -1,0 +1,76 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN"
+    "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+     xsi:schemaLocation="http://www.w3.org/MarkUp/SCHEMA/xhtml11.xsd"
+     xml:lang="en">
+  <head>
+    <title>Information Center for ARM</title>
+    <meta http-equiv="Content-Type" content="application/xhtml+xml; charset=utf-8" />
+    <link type="text/css" rel="stylesheet" media="all" href="file://$TOOLKIT_DIR$/doc/infocenter/style/ewic.css" />
+  </head>
+  <body>
+  <div id="topbanner"></div>
+  <div id="titlebanner_small">
+    <h2>Information Center for ARM</h2>
+  </div>
+  <div class="breadcrumb"><a href="$TOOLKIT_DIR$/doc/infocenter/index.ENU.html">Information Center for ARM</a> | EXAMPLES</div>
+  <div class="mainblock">
+   <h2>Example description</h2>
+
+   <pre>  <!--Insert readme.txt-->
+<span style="font-family: monospace;">
+	EWARM Project Template for STM32F4xx devices
+
+	Directory contents
+
+ - project .ewd/.eww/.ewp: A pre-configured project file with the provided library
+                           structure that produces an executable image with IAR
+                           Embedded Workbench.
+
+ - stm32f4xx_flash.icf : This file is the IAR Linker configuration file used to
+                         place program code (readonly) in internal FLASH and data
+                         (readwrite, Stack and Heap)in internal SRAM.
+                         You can customize this file to your need.
+
+ - stm32f4xx_flash_extsram.icf: This file is the IAR Linker configuration file
+                                used to place program code (readonly) in internal
+                                FLASH and data (readwrite, Stack and Heap)in
+                                external SRAM. You can customize this file to your need.
+
+ - stm32f4xx_flash_extsdram.icf: This file is the IAR Linker configuration file
+                                 used to place program code (readonly) in internal
+                                 FLASH and data (readwrite, Stack and Heap)in
+                                 external SDRAM. You can customize this file to your need.
+
+ - stm32f4xx_ram.icf:  This file is the IAR Linker configuration file used to
+                       place program code (readonly) and data (readwrite, Stack
+                       and Heap)in internal SRAM.
+                       You can customize this file to your need.
+
+ 	How to use it ?
+
+ - Open the Project.eww workspace.
+  - In the workspace toolbar select the project config:
+     - STM324xG_EVAL: to configure the project for STM32F40xx/41xx devices.
+      note The needed define symbols for this config are already declared in the
+           preprocessor section: USE_STM324xG_EVAL, STM32F40XX, USE_STDPERIPH_DRIVER
+
+     - STM324x7I_EVAL: to configure the project for STM32F427x/437x devices.
+      note The needed define symbols for this config are already declared in the
+           preprocessor section: USE_STM324x7I_EVAL, STM32F427X, USE_STDPERIPH_DRIVER
+
+     - STM324x9I_EVAL: to configure the project for STM32F429x/439x devices.
+      note The needed define symbols for this config are already declared in the
+           preprocessor section: USE_STM324x9I_EVAL, STM32F429X, USE_STDPERIPH_DRIVER
+
+ - Rebuild all files: Project->Rebuild all
+ - Load project image: Project->Download and Debug
+ - Run program: Debug->Go(F5)
+</span>
+   </pre>
+
+  </div>
+  </body>
+</html>
+

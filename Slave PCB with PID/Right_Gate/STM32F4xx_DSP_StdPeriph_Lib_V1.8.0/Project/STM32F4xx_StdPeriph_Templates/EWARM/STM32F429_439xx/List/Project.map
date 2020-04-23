@@ -1,0 +1,400 @@
+###############################################################################
+#
+# IAR ELF Linker V8.50.1.245/W32 for ARM                  15/Apr/2020  17:00:54
+# Copyright 2007-2020 IAR Systems AB.
+#
+#    Output file  =
+#        E:\Slave PCB with
+#        PID\STM32F4xx_DSP_StdPeriph_Lib_V1.8.0\Project\STM32F4xx_StdPeriph_Templates\EWARM\STM32F429_439xx\Exe\Project.out
+#    Map file     =
+#        E:\Slave PCB with
+#        PID\STM32F4xx_DSP_StdPeriph_Lib_V1.8.0\Project\STM32F4xx_StdPeriph_Templates\EWARM\STM32F429_439xx\List\Project.map
+#    Command line =
+#        -f C:\Users\Dell\AppData\Local\Temp\EW9E66.tmp ("E:\Slave PCB with
+#        PID\STM32F4xx_DSP_StdPeriph_Lib_V1.8.0\Project\STM32F4xx_StdPeriph_Templates\EWARM\STM32F429_439xx\Obj\main.o"
+#        "E:\Slave PCB with
+#        PID\STM32F4xx_DSP_StdPeriph_Lib_V1.8.0\Project\STM32F4xx_StdPeriph_Templates\EWARM\STM32F429_439xx\Obj\misc.o"
+#        "E:\Slave PCB with
+#        PID\STM32F4xx_DSP_StdPeriph_Lib_V1.8.0\Project\STM32F4xx_StdPeriph_Templates\EWARM\STM32F429_439xx\Obj\startup_stm32f429_439xx.o"
+#        "E:\Slave PCB with
+#        PID\STM32F4xx_DSP_StdPeriph_Lib_V1.8.0\Project\STM32F4xx_StdPeriph_Templates\EWARM\STM32F429_439xx\Obj\stm32f4xx_adc.o"
+#        "E:\Slave PCB with
+#        PID\STM32F4xx_DSP_StdPeriph_Lib_V1.8.0\Project\STM32F4xx_StdPeriph_Templates\EWARM\STM32F429_439xx\Obj\stm32f4xx_can.o"
+#        "E:\Slave PCB with
+#        PID\STM32F4xx_DSP_StdPeriph_Lib_V1.8.0\Project\STM32F4xx_StdPeriph_Templates\EWARM\STM32F429_439xx\Obj\stm32f4xx_crc.o"
+#        "E:\Slave PCB with
+#        PID\STM32F4xx_DSP_StdPeriph_Lib_V1.8.0\Project\STM32F4xx_StdPeriph_Templates\EWARM\STM32F429_439xx\Obj\stm32f4xx_cryp.o"
+#        "E:\Slave PCB with
+#        PID\STM32F4xx_DSP_StdPeriph_Lib_V1.8.0\Project\STM32F4xx_StdPeriph_Templates\EWARM\STM32F429_439xx\Obj\stm32f4xx_cryp_aes.o"
+#        "E:\Slave PCB with
+#        PID\STM32F4xx_DSP_StdPeriph_Lib_V1.8.0\Project\STM32F4xx_StdPeriph_Templates\EWARM\STM32F429_439xx\Obj\stm32f4xx_cryp_des.o"
+#        "E:\Slave PCB with
+#        PID\STM32F4xx_DSP_StdPeriph_Lib_V1.8.0\Project\STM32F4xx_StdPeriph_Templates\EWARM\STM32F429_439xx\Obj\stm32f4xx_cryp_tdes.o"
+#        "E:\Slave PCB with
+#        PID\STM32F4xx_DSP_StdPeriph_Lib_V1.8.0\Project\STM32F4xx_StdPeriph_Templates\EWARM\STM32F429_439xx\Obj\stm32f4xx_dac.o"
+#        "E:\Slave PCB with
+#        PID\STM32F4xx_DSP_StdPeriph_Lib_V1.8.0\Project\STM32F4xx_StdPeriph_Templates\EWARM\STM32F429_439xx\Obj\stm32f4xx_dbgmcu.o"
+#        "E:\Slave PCB with
+#        PID\STM32F4xx_DSP_StdPeriph_Lib_V1.8.0\Project\STM32F4xx_StdPeriph_Templates\EWARM\STM32F429_439xx\Obj\stm32f4xx_dcmi.o"
+#        "E:\Slave PCB with
+#        PID\STM32F4xx_DSP_StdPeriph_Lib_V1.8.0\Project\STM32F4xx_StdPeriph_Templates\EWARM\STM32F429_439xx\Obj\stm32f4xx_dfsdm.o"
+#        "E:\Slave PCB with
+#        PID\STM32F4xx_DSP_StdPeriph_Lib_V1.8.0\Project\STM32F4xx_StdPeriph_Templates\EWARM\STM32F429_439xx\Obj\stm32f4xx_dma.o"
+#        "E:\Slave PCB with
+#        PID\STM32F4xx_DSP_StdPeriph_Lib_V1.8.0\Project\STM32F4xx_StdPeriph_Templates\EWARM\STM32F429_439xx\Obj\stm32f4xx_dma2d.o"
+#        "E:\Slave PCB with
+#        PID\STM32F4xx_DSP_StdPeriph_Lib_V1.8.0\Project\STM32F4xx_StdPeriph_Templates\EWARM\STM32F429_439xx\Obj\stm32f4xx_exti.o"
+#        "E:\Slave PCB with
+#        PID\STM32F4xx_DSP_StdPeriph_Lib_V1.8.0\Project\STM32F4xx_StdPeriph_Templates\EWARM\STM32F429_439xx\Obj\stm32f4xx_flash.o"
+#        "E:\Slave PCB with
+#        PID\STM32F4xx_DSP_StdPeriph_Lib_V1.8.0\Project\STM32F4xx_StdPeriph_Templates\EWARM\STM32F429_439xx\Obj\stm32f4xx_fmc.o"
+#        "E:\Slave PCB with
+#        PID\STM32F4xx_DSP_StdPeriph_Lib_V1.8.0\Project\STM32F4xx_StdPeriph_Templates\EWARM\STM32F429_439xx\Obj\stm32f4xx_fmpi2c.o"
+#        "E:\Slave PCB with
+#        PID\STM32F4xx_DSP_StdPeriph_Lib_V1.8.0\Project\STM32F4xx_StdPeriph_Templates\EWARM\STM32F429_439xx\Obj\stm32f4xx_gpio.o"
+#        "E:\Slave PCB with
+#        PID\STM32F4xx_DSP_StdPeriph_Lib_V1.8.0\Project\STM32F4xx_StdPeriph_Templates\EWARM\STM32F429_439xx\Obj\stm32f4xx_hash.o"
+#        "E:\Slave PCB with
+#        PID\STM32F4xx_DSP_StdPeriph_Lib_V1.8.0\Project\STM32F4xx_StdPeriph_Templates\EWARM\STM32F429_439xx\Obj\stm32f4xx_hash_md5.o"
+#        "E:\Slave PCB with
+#        PID\STM32F4xx_DSP_StdPeriph_Lib_V1.8.0\Project\STM32F4xx_StdPeriph_Templates\EWARM\STM32F429_439xx\Obj\stm32f4xx_hash_sha1.o"
+#        "E:\Slave PCB with
+#        PID\STM32F4xx_DSP_StdPeriph_Lib_V1.8.0\Project\STM32F4xx_StdPeriph_Templates\EWARM\STM32F429_439xx\Obj\stm32f4xx_i2c.o"
+#        "E:\Slave PCB with
+#        PID\STM32F4xx_DSP_StdPeriph_Lib_V1.8.0\Project\STM32F4xx_StdPeriph_Templates\EWARM\STM32F429_439xx\Obj\stm32f4xx_it.o"
+#        "E:\Slave PCB with
+#        PID\STM32F4xx_DSP_StdPeriph_Lib_V1.8.0\Project\STM32F4xx_StdPeriph_Templates\EWARM\STM32F429_439xx\Obj\stm32f4xx_iwdg.o"
+#        "E:\Slave PCB with
+#        PID\STM32F4xx_DSP_StdPeriph_Lib_V1.8.0\Project\STM32F4xx_StdPeriph_Templates\EWARM\STM32F429_439xx\Obj\stm32f4xx_lptim.o"
+#        "E:\Slave PCB with
+#        PID\STM32F4xx_DSP_StdPeriph_Lib_V1.8.0\Project\STM32F4xx_StdPeriph_Templates\EWARM\STM32F429_439xx\Obj\stm32f4xx_ltdc.o"
+#        "E:\Slave PCB with
+#        PID\STM32F4xx_DSP_StdPeriph_Lib_V1.8.0\Project\STM32F4xx_StdPeriph_Templates\EWARM\STM32F429_439xx\Obj\stm32f4xx_pwr.o"
+#        "E:\Slave PCB with
+#        PID\STM32F4xx_DSP_StdPeriph_Lib_V1.8.0\Project\STM32F4xx_StdPeriph_Templates\EWARM\STM32F429_439xx\Obj\stm32f4xx_rcc.o"
+#        "E:\Slave PCB with
+#        PID\STM32F4xx_DSP_StdPeriph_Lib_V1.8.0\Project\STM32F4xx_StdPeriph_Templates\EWARM\STM32F429_439xx\Obj\stm32f4xx_rng.o"
+#        "E:\Slave PCB with
+#        PID\STM32F4xx_DSP_StdPeriph_Lib_V1.8.0\Project\STM32F4xx_StdPeriph_Templates\EWARM\STM32F429_439xx\Obj\stm32f4xx_rtc.o"
+#        "E:\Slave PCB with
+#        PID\STM32F4xx_DSP_StdPeriph_Lib_V1.8.0\Project\STM32F4xx_StdPeriph_Templates\EWARM\STM32F429_439xx\Obj\stm32f4xx_sai.o"
+#        "E:\Slave PCB with
+#        PID\STM32F4xx_DSP_StdPeriph_Lib_V1.8.0\Project\STM32F4xx_StdPeriph_Templates\EWARM\STM32F429_439xx\Obj\stm32f4xx_sdio.o"
+#        "E:\Slave PCB with
+#        PID\STM32F4xx_DSP_StdPeriph_Lib_V1.8.0\Project\STM32F4xx_StdPeriph_Templates\EWARM\STM32F429_439xx\Obj\stm32f4xx_spdifrx.o"
+#        "E:\Slave PCB with
+#        PID\STM32F4xx_DSP_StdPeriph_Lib_V1.8.0\Project\STM32F4xx_StdPeriph_Templates\EWARM\STM32F429_439xx\Obj\stm32f4xx_spi.o"
+#        "E:\Slave PCB with
+#        PID\STM32F4xx_DSP_StdPeriph_Lib_V1.8.0\Project\STM32F4xx_StdPeriph_Templates\EWARM\STM32F429_439xx\Obj\stm32f4xx_syscfg.o"
+#        "E:\Slave PCB with
+#        PID\STM32F4xx_DSP_StdPeriph_Lib_V1.8.0\Project\STM32F4xx_StdPeriph_Templates\EWARM\STM32F429_439xx\Obj\stm32f4xx_tim.o"
+#        "E:\Slave PCB with
+#        PID\STM32F4xx_DSP_StdPeriph_Lib_V1.8.0\Project\STM32F4xx_StdPeriph_Templates\EWARM\STM32F429_439xx\Obj\stm32f4xx_usart.o"
+#        "E:\Slave PCB with
+#        PID\STM32F4xx_DSP_StdPeriph_Lib_V1.8.0\Project\STM32F4xx_StdPeriph_Templates\EWARM\STM32F429_439xx\Obj\stm32f4xx_wwdg.o"
+#        "E:\Slave PCB with
+#        PID\STM32F4xx_DSP_StdPeriph_Lib_V1.8.0\Project\STM32F4xx_StdPeriph_Templates\EWARM\STM32F429_439xx\Obj\system_stm32f4xx.o"
+#        --redirect _Printf=_PrintfSmall --redirect _Scanf=_ScanfSmall
+#        --no_out_extension -o "E:\Slave PCB with
+#        PID\STM32F4xx_DSP_StdPeriph_Lib_V1.8.0\Project\STM32F4xx_StdPeriph_Templates\EWARM\STM32F429_439xx\Exe\Project.out"
+#        --map "E:\Slave PCB with
+#        PID\STM32F4xx_DSP_StdPeriph_Lib_V1.8.0\Project\STM32F4xx_StdPeriph_Templates\EWARM\STM32F429_439xx\List\Project.map"
+#        --config "E:\Slave PCB with
+#        PID\STM32F4xx_DSP_StdPeriph_Lib_V1.8.0\Project\STM32F4xx_StdPeriph_Templates\EWARM\stm32f4xx_flash.icf"
+#        --semihosting --entry __iar_program_start --vfe --text_out locale)
+#
+###############################################################################
+
+*******************************************************************************
+*** RUNTIME MODEL ATTRIBUTES
+***
+
+CppFlavor       = *
+__SystemLibrary = DLib
+__dlib_version  = 6
+
+
+*******************************************************************************
+*** HEAP SELECTION
+***
+
+The basic heap was selected because some modules are built with
+size limitations (and not runtime checking), and --advanced_heap
+was not specified.
+
+
+*******************************************************************************
+*** PLACEMENT SUMMARY
+***
+
+"A0":  place at address 0x800'0000 { ro section .intvec };
+"P1":  place in [from 0x800'0000 to 0x81f'ffff] { ro };
+define block CSTACK with size = 1K, alignment = 8 { };
+define block HEAP with size = 512, alignment = 8 { };
+"P2":  place in [from 0x2000'0000 to 0x2002'ffff] {
+          rw, block CSTACK, block HEAP };
+initialize by copy { rw };
+
+  Section            Kind         Address   Size  Object
+  -------            ----         -------   ----  ------
+"A0":                                      0x1ac
+  .intvec            ro code   0x800'0000  0x1ac  startup_stm32f429_439xx.o [1]
+                             - 0x800'01ac  0x1ac
+
+"P1":                                      0x59d
+  .text              ro code   0x800'01ac  0x10c  system_stm32f4xx.o [1]
+  .text              ro code   0x800'02b8   0xc8  main.o [1]
+  .text              ro code   0x800'0380   0xc4  stm32f4xx_rcc.o [1]
+  .text              ro code   0x800'0444   0x7c  stm32f4xx_gpio.o [1]
+  .text              ro code   0x800'04c0   0x38  packbits_init_single.o [4]
+  .text              ro code   0x800'04f8   0x28  data_init.o [4]
+  .text              ro code   0x800'0520   0x22  fpinit_M.o [3]
+  .iar.init_table    const     0x800'0544   0x10  - Linker created -
+  .text              ro code   0x800'0554   0x1e  cmain.o [4]
+  .text              ro code   0x800'0572    0x4  low_level_init.o [2]
+  .text              ro code   0x800'0576    0x4  exit.o [2]
+  .text              ro code   0x800'057c    0xa  cexit.o [4]
+  .text              ro code   0x800'0588   0x14  exit.o [5]
+  .text              ro code   0x800'059c   0x14  stm32f4xx_it.o [1]
+  .text              ro code   0x800'05b0   0x10  startup_stm32f429_439xx.o [1]
+  .text              ro code   0x800'05c0    0xc  cstartup_M.o [4]
+  .text              ro code   0x800'05cc    0x4  startup_stm32f429_439xx.o [1]
+  .text              ro code   0x800'05d0    0x4  startup_stm32f429_439xx.o [1]
+  .text              ro code   0x800'05d4    0x4  startup_stm32f429_439xx.o [1]
+  .text              ro code   0x800'05d8    0x4  startup_stm32f429_439xx.o [1]
+  .text              ro code   0x800'05dc    0x4  startup_stm32f429_439xx.o [1]
+  .text              ro code   0x800'05e0    0x4  startup_stm32f429_439xx.o [1]
+  .text              ro code   0x800'05e4    0x4  startup_stm32f429_439xx.o [1]
+  .text              ro code   0x800'05e8    0x4  startup_stm32f429_439xx.o [1]
+  .text              ro code   0x800'05ec    0x4  startup_stm32f429_439xx.o [1]
+  .text              ro code   0x800'05f0    0x4  startup_stm32f429_439xx.o [1]
+  .text              ro code   0x800'05f4    0x4  startup_stm32f429_439xx.o [1]
+  .text              ro code   0x800'05f8    0x4  startup_stm32f429_439xx.o [1]
+  .text              ro code   0x800'05fc    0x4  startup_stm32f429_439xx.o [1]
+  .text              ro code   0x800'0600    0x4  startup_stm32f429_439xx.o [1]
+  .text              ro code   0x800'0604    0x4  startup_stm32f429_439xx.o [1]
+  .text              ro code   0x800'0608    0x4  startup_stm32f429_439xx.o [1]
+  .text              ro code   0x800'060c    0x4  startup_stm32f429_439xx.o [1]
+  .text              ro code   0x800'0610    0x4  startup_stm32f429_439xx.o [1]
+  .text              ro code   0x800'0614    0x4  startup_stm32f429_439xx.o [1]
+  .text              ro code   0x800'0618    0x4  startup_stm32f429_439xx.o [1]
+  .text              ro code   0x800'061c    0x4  startup_stm32f429_439xx.o [1]
+  .text              ro code   0x800'0620    0x4  startup_stm32f429_439xx.o [1]
+  .text              ro code   0x800'0624    0x4  startup_stm32f429_439xx.o [1]
+  .text              ro code   0x800'0628    0x4  startup_stm32f429_439xx.o [1]
+  .text              ro code   0x800'062c    0x4  startup_stm32f429_439xx.o [1]
+  .text              ro code   0x800'0630    0x4  startup_stm32f429_439xx.o [1]
+  .text              ro code   0x800'0634    0x4  startup_stm32f429_439xx.o [1]
+  .text              ro code   0x800'0638    0x4  startup_stm32f429_439xx.o [1]
+  .text              ro code   0x800'063c    0x4  startup_stm32f429_439xx.o [1]
+  .text              ro code   0x800'0640    0x4  startup_stm32f429_439xx.o [1]
+  .text              ro code   0x800'0644    0x4  startup_stm32f429_439xx.o [1]
+  .text              ro code   0x800'0648    0x4  startup_stm32f429_439xx.o [1]
+  .text              ro code   0x800'064c    0x4  startup_stm32f429_439xx.o [1]
+  .text              ro code   0x800'0650    0x4  startup_stm32f429_439xx.o [1]
+  .text              ro code   0x800'0654    0x4  startup_stm32f429_439xx.o [1]
+  .text              ro code   0x800'0658    0x4  startup_stm32f429_439xx.o [1]
+  .text              ro code   0x800'065c    0x4  startup_stm32f429_439xx.o [1]
+  .text              ro code   0x800'0660    0x4  startup_stm32f429_439xx.o [1]
+  .text              ro code   0x800'0664    0x4  startup_stm32f429_439xx.o [1]
+  .text              ro code   0x800'0668    0x4  startup_stm32f429_439xx.o [1]
+  .text              ro code   0x800'066c    0x4  startup_stm32f429_439xx.o [1]
+  .text              ro code   0x800'0670    0x4  startup_stm32f429_439xx.o [1]
+  .text              ro code   0x800'0674    0x4  startup_stm32f429_439xx.o [1]
+  .text              ro code   0x800'0678    0x4  startup_stm32f429_439xx.o [1]
+  .text              ro code   0x800'067c    0x4  startup_stm32f429_439xx.o [1]
+  .text              ro code   0x800'0680    0x4  startup_stm32f429_439xx.o [1]
+  .text              ro code   0x800'0684    0x4  startup_stm32f429_439xx.o [1]
+  .text              ro code   0x800'0688    0x4  startup_stm32f429_439xx.o [1]
+  .text              ro code   0x800'068c    0x4  startup_stm32f429_439xx.o [1]
+  .text              ro code   0x800'0690    0x4  startup_stm32f429_439xx.o [1]
+  .text              ro code   0x800'0694    0x4  startup_stm32f429_439xx.o [1]
+  .text              ro code   0x800'0698    0x4  startup_stm32f429_439xx.o [1]
+  .text              ro code   0x800'069c    0x4  startup_stm32f429_439xx.o [1]
+  .text              ro code   0x800'06a0    0x4  startup_stm32f429_439xx.o [1]
+  .text              ro code   0x800'06a4    0x4  startup_stm32f429_439xx.o [1]
+  .text              ro code   0x800'06a8    0x4  startup_stm32f429_439xx.o [1]
+  .text              ro code   0x800'06ac    0x4  startup_stm32f429_439xx.o [1]
+  .text              ro code   0x800'06b0    0x4  startup_stm32f429_439xx.o [1]
+  .text              ro code   0x800'06b4    0x4  startup_stm32f429_439xx.o [1]
+  .text              ro code   0x800'06b8    0x4  startup_stm32f429_439xx.o [1]
+  .text              ro code   0x800'06bc    0x4  startup_stm32f429_439xx.o [1]
+  .text              ro code   0x800'06c0    0x4  startup_stm32f429_439xx.o [1]
+  .text              ro code   0x800'06c4    0x4  startup_stm32f429_439xx.o [1]
+  .text              ro code   0x800'06c8    0x4  startup_stm32f429_439xx.o [1]
+  .text              ro code   0x800'06cc    0x4  startup_stm32f429_439xx.o [1]
+  .text              ro code   0x800'06d0    0x4  startup_stm32f429_439xx.o [1]
+  .text              ro code   0x800'06d4    0x4  startup_stm32f429_439xx.o [1]
+  .text              ro code   0x800'06d8    0x4  startup_stm32f429_439xx.o [1]
+  .text              ro code   0x800'06dc    0x4  startup_stm32f429_439xx.o [1]
+  .text              ro code   0x800'06e0    0x4  startup_stm32f429_439xx.o [1]
+  .text              ro code   0x800'06e4    0x4  startup_stm32f429_439xx.o [1]
+  .text              ro code   0x800'06e8    0x4  startup_stm32f429_439xx.o [1]
+  .text              ro code   0x800'06ec    0x4  startup_stm32f429_439xx.o [1]
+  .text              ro code   0x800'06f0    0x4  startup_stm32f429_439xx.o [1]
+  .text              ro code   0x800'06f4    0x4  startup_stm32f429_439xx.o [1]
+  .text              ro code   0x800'06f8    0x4  startup_stm32f429_439xx.o [1]
+  .text              ro code   0x800'06fc    0x4  startup_stm32f429_439xx.o [1]
+  .text              ro code   0x800'0700    0x4  startup_stm32f429_439xx.o [1]
+  .text              ro code   0x800'0704    0x4  startup_stm32f429_439xx.o [1]
+  .text              ro code   0x800'0708    0x4  startup_stm32f429_439xx.o [1]
+  .text              ro code   0x800'070c    0x4  startup_stm32f429_439xx.o [1]
+  .text              ro code   0x800'0710    0x4  startup_stm32f429_439xx.o [1]
+  .text              ro code   0x800'0714    0x4  startup_stm32f429_439xx.o [1]
+  .text              ro code   0x800'0718    0x4  startup_stm32f429_439xx.o [1]
+  .text              ro code   0x800'071c    0x4  startup_stm32f429_439xx.o [1]
+  .text              ro code   0x800'0720    0x4  startup_stm32f429_439xx.o [1]
+  .text              ro code   0x800'0724    0x4  startup_stm32f429_439xx.o [1]
+  .text              ro code   0x800'0728    0x4  startup_stm32f429_439xx.o [1]
+  .text              ro code   0x800'072c    0x4  startup_stm32f429_439xx.o [1]
+  .text              ro code   0x800'0730    0x4  startup_stm32f429_439xx.o [1]
+  .text              ro code   0x800'0734    0x4  startup_stm32f429_439xx.o [1]
+  .rodata            const     0x800'0738    0x0  packbits_init_single.o [4]
+  Initializer bytes  const     0x800'0738   0x11  <for P2-1>
+                             - 0x800'0749  0x59d
+
+"P2", part 1 of 2:                          0x24
+  P2-1                        0x2000'0000   0x24  <Init block>
+    .data            inited   0x2000'0000   0x10  stm32f4xx_rcc.o [1]
+    .bss             inited   0x2000'0010   0x14  main.o [1]
+                            - 0x2000'0024   0x24
+
+"P2", part 2 of 2:                         0x400
+  CSTACK                      0x2000'0028  0x400  <Block>
+    CSTACK           uninit   0x2000'0028  0x400  <Block tail>
+                            - 0x2000'0428  0x400
+
+Unused ranges:
+
+         From           To       Size
+         ----           --       ----
+   0x800'0749   0x81f'ffff  0x1f'f8b7
+  0x2000'0024  0x2000'0027        0x4
+  0x2000'0428  0x2002'ffff   0x2'fbd8
+
+
+*******************************************************************************
+*** INIT TABLE
+***
+
+          Address      Size
+          -------      ----
+Copy/packbits (__iar_packbits_init_single3)
+    1 source range, total size 0x11 (47% of destination):
+           0x800'0738  0x11
+    1 destination range, total size 0x24:
+          0x2000'0000  0x24
+
+
+
+*******************************************************************************
+*** MODULE SUMMARY
+***
+
+    Module                     ro code  ro data  rw data
+    ------                     -------  -------  -------
+command line/config:
+    ----------------------------------------------------
+    Total:
+
+E:\Slave PCB with PID\STM32F4xx_DSP_StdPeriph_Lib_V1.8.0\Project\STM32F4xx_StdPeriph_Templates\EWARM\STM32F429_439xx\Obj: [1]
+    main.o                         200       10       20
+    startup_stm32f429_439xx.o      808
+    stm32f4xx_gpio.o               124
+    stm32f4xx_it.o                  20
+    stm32f4xx_rcc.o                196        7       16
+    system_stm32f4xx.o             268
+    ----------------------------------------------------
+    Total:                       1'616       17       36
+
+dl7M_tln.a: [2]
+    exit.o                           4
+    low_level_init.o                 4
+    ----------------------------------------------------
+    Total:                           8
+
+m7M_tls.a: [3]
+    fpinit_M.o                      34
+    ----------------------------------------------------
+    Total:                          34
+
+rt7M_tl.a: [4]
+    cexit.o                         10
+    cmain.o                         30
+    cstartup_M.o                    12
+    data_init.o                     40
+    packbits_init_single.o          56
+    ----------------------------------------------------
+    Total:                         148
+
+shb_l.a: [5]
+    exit.o                          20
+    ----------------------------------------------------
+    Total:                          20
+
+    Gaps                             4        2
+    Linker created                           16    1'024
+--------------------------------------------------------
+    Grand Total:                 1'830       35    1'060
+
+
+*******************************************************************************
+*** ENTRY LIST
+***
+
+Entry                       Address  Size  Type      Object
+-----                       -------  ----  ----      ------
+.iar.init_table$$Base    0x800'0544         --   Gb  - Linker created -
+.iar.init_table$$Limit   0x800'0554         --   Gb  - Linker created -
+?main                    0x800'0555        Code  Gb  cmain.o [4]
+APBAHBPrescTable        0x2000'0000  0x10  Data  Lc  stm32f4xx_rcc.o [1]
+BusFault_Handler         0x800'05a3   0x2  Code  Gb  stm32f4xx_it.o [1]
+CSTACK$$Base            0x2000'0028         --   Gb  - Linker created -
+CSTACK$$Limit           0x2000'0428         --   Gb  - Linker created -
+DebugMon_Handler         0x800'05a9   0x2  Code  Gb  stm32f4xx_it.o [1]
+GPIO_Init                0x800'0445  0x7c  Code  Gb  stm32f4xx_gpio.o [1]
+HardFault_Handler        0x800'059f   0x2  Code  Gb  stm32f4xx_it.o [1]
+MemManage_Handler        0x800'05a1   0x2  Code  Gb  stm32f4xx_it.o [1]
+NMI_Handler              0x800'059d   0x2  Code  Gb  stm32f4xx_it.o [1]
+PendSV_Handler           0x800'05ab   0x2  Code  Gb  stm32f4xx_it.o [1]
+RCC_AHB1PeriphClockCmd   0x800'0419  0x14  Code  Gb  stm32f4xx_rcc.o [1]
+RCC_Clocks              0x2000'0010  0x10  Data  Gb  main.o [1]
+RCC_GetClocksFreq        0x800'039d  0x7c  Code  Gb  stm32f4xx_rcc.o [1]
+RCC_MCO1Config           0x800'0381   0xc  Code  Gb  stm32f4xx_rcc.o [1]
+RCC_MCO2Config           0x800'038d   0x8  Code  Gb  stm32f4xx_rcc.o [1]
+Region$$Table$$Base      0x800'0544         --   Gb  - Linker created -
+Region$$Table$$Limit     0x800'0554         --   Gb  - Linker created -
+SVC_Handler              0x800'05a7   0x2  Code  Gb  stm32f4xx_it.o [1]
+SysTick_Handler          0x800'05ad   0x4  Code  Gb  stm32f4xx_it.o [1]
+SystemInit               0x800'01ad  0xea  Code  Gb  system_stm32f4xx.o [1]
+TimingDelay_Decrement    0x800'035d   0xe  Code  Gb  main.o [1]
+UsageFault_Handler       0x800'05a5   0x2  Code  Gb  stm32f4xx_it.o [1]
+__cmain                  0x800'0555        Code  Gb  cmain.o [4]
+__exit                   0x800'0589  0x14  Code  Gb  exit.o [5]
+__iar_data_init3         0x800'04f9  0x28  Code  Gb  data_init.o [4]
+__iar_init_vfp           0x800'0521        Code  Gb  fpinit_M.o [3]
+__iar_packbits_init_single3
+                         0x800'04c1  0x38  Code  Gb  packbits_init_single.o [4]
+__iar_program_start      0x800'05c1        Code  Gb  cstartup_M.o [4]
+__low_level_init         0x800'0573   0x4  Code  Gb  low_level_init.o [2]
+__vector_table           0x800'0000        Data  Gb  startup_stm32f429_439xx.o [1]
+_call_main               0x800'0561        Code  Gb  cmain.o [4]
+_exit                    0x800'057d        Code  Gb  cexit.o [4]
+_main                    0x800'056f        Code  Gb  cmain.o [4]
+exit                     0x800'0577   0x4  Code  Gb  exit.o [2]
+main                     0x800'02b9  0x84  Code  Gb  main.o [1]
+uwTimingDelay           0x2000'0020   0x4  Data  Lc  main.o [1]
+
+
+[1] = E:\Slave PCB with PID\STM32F4xx_DSP_StdPeriph_Lib_V1.8.0\Project\STM32F4xx_StdPeriph_Templates\EWARM\STM32F429_439xx\Obj
+[2] = dl7M_tln.a
+[3] = m7M_tls.a
+[4] = rt7M_tl.a
+[5] = shb_l.a
+
+  1'830 bytes of readonly  code memory
+     35 bytes of readonly  data memory
+  1'060 bytes of readwrite data memory
+
+Errors: none
+Warnings: none
