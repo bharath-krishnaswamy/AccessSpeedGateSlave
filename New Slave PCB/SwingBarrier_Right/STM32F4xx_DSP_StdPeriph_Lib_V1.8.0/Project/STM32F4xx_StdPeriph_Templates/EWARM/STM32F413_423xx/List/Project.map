@@ -1,117 +1,117 @@
 ###############################################################################
 #
-# IAR ELF Linker V8.50.1.245/W32 for ARM                  16/Apr/2020  16:15:21
+# IAR ELF Linker V8.50.1.245/W32 for ARM                  27/Apr/2020  11:19:05
 # Copyright 2007-2020 IAR Systems AB.
 #
 #    Output file  =
-#        E:\New Slave
+#        E:\GIT\New Slave
 #        PCB\SwingBarrier_Right\STM32F4xx_DSP_StdPeriph_Lib_V1.8.0\Project\STM32F4xx_StdPeriph_Templates\EWARM\STM32F413_423xx\Exe\Project.out
 #    Map file     =
-#        E:\New Slave
+#        E:\GIT\New Slave
 #        PCB\SwingBarrier_Right\STM32F4xx_DSP_StdPeriph_Lib_V1.8.0\Project\STM32F4xx_StdPeriph_Templates\EWARM\STM32F413_423xx\List\Project.map
 #    Command line =
-#        -f C:\Users\Dell\AppData\Local\Temp\EW4145.tmp ("E:\New Slave
+#        -f C:\Users\Dell\AppData\Local\Temp\EW1AF6.tmp ("E:\GIT\New Slave
 #        PCB\SwingBarrier_Right\STM32F4xx_DSP_StdPeriph_Lib_V1.8.0\Project\STM32F4xx_StdPeriph_Templates\EWARM\STM32F413_423xx\Obj\Config.o"
-#        "E:\New Slave
+#        "E:\GIT\New Slave
 #        PCB\SwingBarrier_Right\STM32F4xx_DSP_StdPeriph_Lib_V1.8.0\Project\STM32F4xx_StdPeriph_Templates\EWARM\STM32F413_423xx\Obj\flash.o"
-#        "E:\New Slave
+#        "E:\GIT\New Slave
 #        PCB\SwingBarrier_Right\STM32F4xx_DSP_StdPeriph_Lib_V1.8.0\Project\STM32F4xx_StdPeriph_Templates\EWARM\STM32F413_423xx\Obj\main.o"
-#        "E:\New Slave
+#        "E:\GIT\New Slave
 #        PCB\SwingBarrier_Right\STM32F4xx_DSP_StdPeriph_Lib_V1.8.0\Project\STM32F4xx_StdPeriph_Templates\EWARM\STM32F413_423xx\Obj\misc.o"
-#        "E:\New Slave
+#        "E:\GIT\New Slave
 #        PCB\SwingBarrier_Right\STM32F4xx_DSP_StdPeriph_Lib_V1.8.0\Project\STM32F4xx_StdPeriph_Templates\EWARM\STM32F413_423xx\Obj\startup_stm32f413_423xx.o"
-#        "E:\New Slave
+#        "E:\GIT\New Slave
 #        PCB\SwingBarrier_Right\STM32F4xx_DSP_StdPeriph_Lib_V1.8.0\Project\STM32F4xx_StdPeriph_Templates\EWARM\STM32F413_423xx\Obj\stm32f4xx_adc.o"
-#        "E:\New Slave
+#        "E:\GIT\New Slave
 #        PCB\SwingBarrier_Right\STM32F4xx_DSP_StdPeriph_Lib_V1.8.0\Project\STM32F4xx_StdPeriph_Templates\EWARM\STM32F413_423xx\Obj\stm32f4xx_can.o"
-#        "E:\New Slave
+#        "E:\GIT\New Slave
 #        PCB\SwingBarrier_Right\STM32F4xx_DSP_StdPeriph_Lib_V1.8.0\Project\STM32F4xx_StdPeriph_Templates\EWARM\STM32F413_423xx\Obj\stm32f4xx_cec.o"
-#        "E:\New Slave
+#        "E:\GIT\New Slave
 #        PCB\SwingBarrier_Right\STM32F4xx_DSP_StdPeriph_Lib_V1.8.0\Project\STM32F4xx_StdPeriph_Templates\EWARM\STM32F413_423xx\Obj\stm32f4xx_crc.o"
-#        "E:\New Slave
+#        "E:\GIT\New Slave
 #        PCB\SwingBarrier_Right\STM32F4xx_DSP_StdPeriph_Lib_V1.8.0\Project\STM32F4xx_StdPeriph_Templates\EWARM\STM32F413_423xx\Obj\stm32f4xx_cryp.o"
-#        "E:\New Slave
+#        "E:\GIT\New Slave
 #        PCB\SwingBarrier_Right\STM32F4xx_DSP_StdPeriph_Lib_V1.8.0\Project\STM32F4xx_StdPeriph_Templates\EWARM\STM32F413_423xx\Obj\stm32f4xx_cryp_aes.o"
-#        "E:\New Slave
+#        "E:\GIT\New Slave
 #        PCB\SwingBarrier_Right\STM32F4xx_DSP_StdPeriph_Lib_V1.8.0\Project\STM32F4xx_StdPeriph_Templates\EWARM\STM32F413_423xx\Obj\stm32f4xx_cryp_des.o"
-#        "E:\New Slave
+#        "E:\GIT\New Slave
 #        PCB\SwingBarrier_Right\STM32F4xx_DSP_StdPeriph_Lib_V1.8.0\Project\STM32F4xx_StdPeriph_Templates\EWARM\STM32F413_423xx\Obj\stm32f4xx_cryp_tdes.o"
-#        "E:\New Slave
+#        "E:\GIT\New Slave
 #        PCB\SwingBarrier_Right\STM32F4xx_DSP_StdPeriph_Lib_V1.8.0\Project\STM32F4xx_StdPeriph_Templates\EWARM\STM32F413_423xx\Obj\stm32f4xx_dac.o"
-#        "E:\New Slave
+#        "E:\GIT\New Slave
 #        PCB\SwingBarrier_Right\STM32F4xx_DSP_StdPeriph_Lib_V1.8.0\Project\STM32F4xx_StdPeriph_Templates\EWARM\STM32F413_423xx\Obj\stm32f4xx_dbgmcu.o"
-#        "E:\New Slave
+#        "E:\GIT\New Slave
 #        PCB\SwingBarrier_Right\STM32F4xx_DSP_StdPeriph_Lib_V1.8.0\Project\STM32F4xx_StdPeriph_Templates\EWARM\STM32F413_423xx\Obj\stm32f4xx_dcmi.o"
-#        "E:\New Slave
+#        "E:\GIT\New Slave
 #        PCB\SwingBarrier_Right\STM32F4xx_DSP_StdPeriph_Lib_V1.8.0\Project\STM32F4xx_StdPeriph_Templates\EWARM\STM32F413_423xx\Obj\stm32f4xx_dfsdm.o"
-#        "E:\New Slave
+#        "E:\GIT\New Slave
 #        PCB\SwingBarrier_Right\STM32F4xx_DSP_StdPeriph_Lib_V1.8.0\Project\STM32F4xx_StdPeriph_Templates\EWARM\STM32F413_423xx\Obj\stm32f4xx_dma.o"
-#        "E:\New Slave
+#        "E:\GIT\New Slave
 #        PCB\SwingBarrier_Right\STM32F4xx_DSP_StdPeriph_Lib_V1.8.0\Project\STM32F4xx_StdPeriph_Templates\EWARM\STM32F413_423xx\Obj\stm32f4xx_dma2d.o"
-#        "E:\New Slave
+#        "E:\GIT\New Slave
 #        PCB\SwingBarrier_Right\STM32F4xx_DSP_StdPeriph_Lib_V1.8.0\Project\STM32F4xx_StdPeriph_Templates\EWARM\STM32F413_423xx\Obj\stm32f4xx_dsi.o"
-#        "E:\New Slave
+#        "E:\GIT\New Slave
 #        PCB\SwingBarrier_Right\STM32F4xx_DSP_StdPeriph_Lib_V1.8.0\Project\STM32F4xx_StdPeriph_Templates\EWARM\STM32F413_423xx\Obj\stm32f4xx_exti.o"
-#        "E:\New Slave
+#        "E:\GIT\New Slave
 #        PCB\SwingBarrier_Right\STM32F4xx_DSP_StdPeriph_Lib_V1.8.0\Project\STM32F4xx_StdPeriph_Templates\EWARM\STM32F413_423xx\Obj\stm32f4xx_flash.o"
-#        "E:\New Slave
+#        "E:\GIT\New Slave
 #        PCB\SwingBarrier_Right\STM32F4xx_DSP_StdPeriph_Lib_V1.8.0\Project\STM32F4xx_StdPeriph_Templates\EWARM\STM32F413_423xx\Obj\stm32f4xx_flash_ramfunc.o"
-#        "E:\New Slave
+#        "E:\GIT\New Slave
 #        PCB\SwingBarrier_Right\STM32F4xx_DSP_StdPeriph_Lib_V1.8.0\Project\STM32F4xx_StdPeriph_Templates\EWARM\STM32F413_423xx\Obj\stm32f4xx_fmpi2c.o"
-#        "E:\New Slave
+#        "E:\GIT\New Slave
 #        PCB\SwingBarrier_Right\STM32F4xx_DSP_StdPeriph_Lib_V1.8.0\Project\STM32F4xx_StdPeriph_Templates\EWARM\STM32F413_423xx\Obj\stm32f4xx_fsmc.o"
-#        "E:\New Slave
+#        "E:\GIT\New Slave
 #        PCB\SwingBarrier_Right\STM32F4xx_DSP_StdPeriph_Lib_V1.8.0\Project\STM32F4xx_StdPeriph_Templates\EWARM\STM32F413_423xx\Obj\stm32f4xx_gpio.o"
-#        "E:\New Slave
+#        "E:\GIT\New Slave
 #        PCB\SwingBarrier_Right\STM32F4xx_DSP_StdPeriph_Lib_V1.8.0\Project\STM32F4xx_StdPeriph_Templates\EWARM\STM32F413_423xx\Obj\stm32f4xx_hash.o"
-#        "E:\New Slave
+#        "E:\GIT\New Slave
 #        PCB\SwingBarrier_Right\STM32F4xx_DSP_StdPeriph_Lib_V1.8.0\Project\STM32F4xx_StdPeriph_Templates\EWARM\STM32F413_423xx\Obj\stm32f4xx_hash_md5.o"
-#        "E:\New Slave
+#        "E:\GIT\New Slave
 #        PCB\SwingBarrier_Right\STM32F4xx_DSP_StdPeriph_Lib_V1.8.0\Project\STM32F4xx_StdPeriph_Templates\EWARM\STM32F413_423xx\Obj\stm32f4xx_hash_sha1.o"
-#        "E:\New Slave
+#        "E:\GIT\New Slave
 #        PCB\SwingBarrier_Right\STM32F4xx_DSP_StdPeriph_Lib_V1.8.0\Project\STM32F4xx_StdPeriph_Templates\EWARM\STM32F413_423xx\Obj\stm32f4xx_i2c.o"
-#        "E:\New Slave
+#        "E:\GIT\New Slave
 #        PCB\SwingBarrier_Right\STM32F4xx_DSP_StdPeriph_Lib_V1.8.0\Project\STM32F4xx_StdPeriph_Templates\EWARM\STM32F413_423xx\Obj\stm32f4xx_it.o"
-#        "E:\New Slave
+#        "E:\GIT\New Slave
 #        PCB\SwingBarrier_Right\STM32F4xx_DSP_StdPeriph_Lib_V1.8.0\Project\STM32F4xx_StdPeriph_Templates\EWARM\STM32F413_423xx\Obj\stm32f4xx_iwdg.o"
-#        "E:\New Slave
+#        "E:\GIT\New Slave
 #        PCB\SwingBarrier_Right\STM32F4xx_DSP_StdPeriph_Lib_V1.8.0\Project\STM32F4xx_StdPeriph_Templates\EWARM\STM32F413_423xx\Obj\stm32f4xx_lptim.o"
-#        "E:\New Slave
+#        "E:\GIT\New Slave
 #        PCB\SwingBarrier_Right\STM32F4xx_DSP_StdPeriph_Lib_V1.8.0\Project\STM32F4xx_StdPeriph_Templates\EWARM\STM32F413_423xx\Obj\stm32f4xx_ltdc.o"
-#        "E:\New Slave
+#        "E:\GIT\New Slave
 #        PCB\SwingBarrier_Right\STM32F4xx_DSP_StdPeriph_Lib_V1.8.0\Project\STM32F4xx_StdPeriph_Templates\EWARM\STM32F413_423xx\Obj\stm32f4xx_pwr.o"
-#        "E:\New Slave
+#        "E:\GIT\New Slave
 #        PCB\SwingBarrier_Right\STM32F4xx_DSP_StdPeriph_Lib_V1.8.0\Project\STM32F4xx_StdPeriph_Templates\EWARM\STM32F413_423xx\Obj\stm32f4xx_qspi.o"
-#        "E:\New Slave
+#        "E:\GIT\New Slave
 #        PCB\SwingBarrier_Right\STM32F4xx_DSP_StdPeriph_Lib_V1.8.0\Project\STM32F4xx_StdPeriph_Templates\EWARM\STM32F413_423xx\Obj\stm32f4xx_rcc.o"
-#        "E:\New Slave
+#        "E:\GIT\New Slave
 #        PCB\SwingBarrier_Right\STM32F4xx_DSP_StdPeriph_Lib_V1.8.0\Project\STM32F4xx_StdPeriph_Templates\EWARM\STM32F413_423xx\Obj\stm32f4xx_rng.o"
-#        "E:\New Slave
+#        "E:\GIT\New Slave
 #        PCB\SwingBarrier_Right\STM32F4xx_DSP_StdPeriph_Lib_V1.8.0\Project\STM32F4xx_StdPeriph_Templates\EWARM\STM32F413_423xx\Obj\stm32f4xx_rtc.o"
-#        "E:\New Slave
+#        "E:\GIT\New Slave
 #        PCB\SwingBarrier_Right\STM32F4xx_DSP_StdPeriph_Lib_V1.8.0\Project\STM32F4xx_StdPeriph_Templates\EWARM\STM32F413_423xx\Obj\stm32f4xx_sai.o"
-#        "E:\New Slave
+#        "E:\GIT\New Slave
 #        PCB\SwingBarrier_Right\STM32F4xx_DSP_StdPeriph_Lib_V1.8.0\Project\STM32F4xx_StdPeriph_Templates\EWARM\STM32F413_423xx\Obj\stm32f4xx_sdio.o"
-#        "E:\New Slave
+#        "E:\GIT\New Slave
 #        PCB\SwingBarrier_Right\STM32F4xx_DSP_StdPeriph_Lib_V1.8.0\Project\STM32F4xx_StdPeriph_Templates\EWARM\STM32F413_423xx\Obj\stm32f4xx_spdifrx.o"
-#        "E:\New Slave
+#        "E:\GIT\New Slave
 #        PCB\SwingBarrier_Right\STM32F4xx_DSP_StdPeriph_Lib_V1.8.0\Project\STM32F4xx_StdPeriph_Templates\EWARM\STM32F413_423xx\Obj\stm32f4xx_spi.o"
-#        "E:\New Slave
+#        "E:\GIT\New Slave
 #        PCB\SwingBarrier_Right\STM32F4xx_DSP_StdPeriph_Lib_V1.8.0\Project\STM32F4xx_StdPeriph_Templates\EWARM\STM32F413_423xx\Obj\stm32f4xx_syscfg.o"
-#        "E:\New Slave
+#        "E:\GIT\New Slave
 #        PCB\SwingBarrier_Right\STM32F4xx_DSP_StdPeriph_Lib_V1.8.0\Project\STM32F4xx_StdPeriph_Templates\EWARM\STM32F413_423xx\Obj\stm32f4xx_tim.o"
-#        "E:\New Slave
+#        "E:\GIT\New Slave
 #        PCB\SwingBarrier_Right\STM32F4xx_DSP_StdPeriph_Lib_V1.8.0\Project\STM32F4xx_StdPeriph_Templates\EWARM\STM32F413_423xx\Obj\stm32f4xx_usart.o"
-#        "E:\New Slave
+#        "E:\GIT\New Slave
 #        PCB\SwingBarrier_Right\STM32F4xx_DSP_StdPeriph_Lib_V1.8.0\Project\STM32F4xx_StdPeriph_Templates\EWARM\STM32F413_423xx\Obj\stm32f4xx_wwdg.o"
-#        "E:\New Slave
+#        "E:\GIT\New Slave
 #        PCB\SwingBarrier_Right\STM32F4xx_DSP_StdPeriph_Lib_V1.8.0\Project\STM32F4xx_StdPeriph_Templates\EWARM\STM32F413_423xx\Obj\system_stm32f4xx.o"
 #        --redirect _Printf=_PrintfSmall --redirect _Scanf=_ScanfSmall
-#        --no_out_extension -o "E:\New Slave
+#        --no_out_extension -o "E:\GIT\New Slave
 #        PCB\SwingBarrier_Right\STM32F4xx_DSP_StdPeriph_Lib_V1.8.0\Project\STM32F4xx_StdPeriph_Templates\EWARM\STM32F413_423xx\Exe\Project.out"
-#        --map "E:\New Slave
+#        --map "E:\GIT\New Slave
 #        PCB\SwingBarrier_Right\STM32F4xx_DSP_StdPeriph_Lib_V1.8.0\Project\STM32F4xx_StdPeriph_Templates\EWARM\STM32F413_423xx\List\Project.map"
-#        --config "E:\New Slave
+#        --config "E:\GIT\New Slave
 #        PCB\SwingBarrier_Right\STM32F4xx_DSP_StdPeriph_Lib_V1.8.0\Project\STM32F4xx_StdPeriph_Templates\EWARM\stm32f4xx_flash.icf"
 #        --semihosting --entry __iar_program_start --vfe --text_out locale)
 #
@@ -153,7 +153,7 @@ initialize by copy { rw };
   .intvec            ro code   0x800'0000   0x1d8  startup_stm32f413_423xx.o [1]
                              - 0x800'01d8   0x1d8
 
-"P1":                                      0x12f0
+"P1":                                      0x12f4
   .text              ro code   0x800'01d8   0x468  Config.o [1]
   .text              ro code   0x800'0640    0xf0  stm32f4xx_rcc.o [1]
   .text              ro code   0x800'0730    0xb6  stm32f4xx_gpio.o [1]
@@ -164,19 +164,18 @@ initialize by copy { rw };
   .text              ro code   0x800'0b1c   0x14e  stm32f4xx_flash.o [1]
   .text              ro code   0x800'0c6c   0x3c0  main.o [1]
   .text              ro code   0x800'102c    0xec  system_stm32f4xx.o [1]
-  .text              ro code   0x800'1118   0x114  stm32f4xx_it.o [1]
-  .text              ro code   0x800'122c    0x38  packbits_init_single.o [4]
-  .text              ro code   0x800'1264    0x28  data_init.o [4]
-  .text              ro code   0x800'128c    0x22  fpinit_M.o [3]
-  .iar.init_table    const     0x800'12b0    0x10  - Linker created -
-  .text              ro code   0x800'12c0    0x1e  cmain.o [4]
-  .text              ro code   0x800'12de     0x4  low_level_init.o [2]
-  .text              ro code   0x800'12e2     0x4  exit.o [2]
-  .text              ro code   0x800'12e8     0xa  cexit.o [4]
-  .text              ro code   0x800'12f4    0x14  exit.o [5]
-  .text              ro code   0x800'1308    0x10  startup_stm32f413_423xx.o [1]
-  .text              ro code   0x800'1318     0xc  cstartup_M.o [4]
-  .text              ro code   0x800'1324     0x4  startup_stm32f413_423xx.o [1]
+  .text              ro code   0x800'1118   0x118  stm32f4xx_it.o [1]
+  .text              ro code   0x800'1230    0x38  packbits_init_single.o [4]
+  .text              ro code   0x800'1268    0x28  data_init.o [4]
+  .text              ro code   0x800'1290    0x22  fpinit_M.o [3]
+  .iar.init_table    const     0x800'12b4    0x10  - Linker created -
+  .text              ro code   0x800'12c4    0x1e  cmain.o [4]
+  .text              ro code   0x800'12e2     0x4  low_level_init.o [2]
+  .text              ro code   0x800'12e6     0x4  exit.o [2]
+  .text              ro code   0x800'12ec     0xa  cexit.o [4]
+  .text              ro code   0x800'12f8    0x14  exit.o [5]
+  .text              ro code   0x800'130c    0x10  startup_stm32f413_423xx.o [1]
+  .text              ro code   0x800'131c     0xc  cstartup_M.o [4]
   .text              ro code   0x800'1328     0x4  startup_stm32f413_423xx.o [1]
   .text              ro code   0x800'132c     0x4  startup_stm32f413_423xx.o [1]
   .text              ro code   0x800'1330     0x4  startup_stm32f413_423xx.o [1]
@@ -271,9 +270,10 @@ initialize by copy { rw };
   .text              ro code   0x800'1494     0x4  startup_stm32f413_423xx.o [1]
   .text              ro code   0x800'1498     0x4  startup_stm32f413_423xx.o [1]
   .text              ro code   0x800'149c     0x4  startup_stm32f413_423xx.o [1]
-  .rodata            const     0x800'14a0     0x0  packbits_init_single.o [4]
-  Initializer bytes  const     0x800'14a0    0x28  <for P2-1>
-                             - 0x800'14c8  0x12f0
+  .text              ro code   0x800'14a0     0x4  startup_stm32f413_423xx.o [1]
+  .rodata            const     0x800'14a4     0x0  packbits_init_single.o [4]
+  Initializer bytes  const     0x800'14a4    0x28  <for P2-1>
+                             - 0x800'14cc  0x12f4
 
 "P2", part 1 of 2:                           0x94
   P2-1                        0x2000'0000    0x94  <Init block>
@@ -296,7 +296,7 @@ Unused ranges:
 
          From           To       Size
          ----           --       ----
-   0x800'14c8   0x81f'ffff  0x1f'eb38
+   0x800'14cc   0x81f'ffff  0x1f'eb34
   0x2000'0094  0x2000'0097        0x4
   0x2000'0498  0x2002'ffff   0x2'fb68
 
@@ -309,7 +309,7 @@ Unused ranges:
           -------      ----
 Copy/packbits (__iar_packbits_init_single3)
     1 source range, total size 0x28 (27% of destination):
-           0x800'14a0  0x28
+           0x800'14a4  0x28
     1 destination range, total size 0x94:
           0x2000'0000  0x94
 
@@ -325,7 +325,7 @@ command line/config:
     ----------------------------------------------------
     Total:
 
-E:\New Slave PCB\SwingBarrier_Right\STM32F4xx_DSP_StdPeriph_Lib_V1.8.0\Project\STM32F4xx_StdPeriph_Templates\EWARM\STM32F413_423xx\Obj: [1]
+E:\GIT\New Slave PCB\SwingBarrier_Right\STM32F4xx_DSP_StdPeriph_Lib_V1.8.0\Project\STM32F4xx_StdPeriph_Templates\EWARM\STM32F413_423xx\Obj: [1]
     Config.o                     1'128        3       12
     flash.o                        132        6       24
     main.o                         960       12       48
@@ -333,13 +333,13 @@ E:\New Slave PCB\SwingBarrier_Right\STM32F4xx_DSP_StdPeriph_Lib_V1.8.0\Project\S
     startup_stm32f413_423xx.o      868
     stm32f4xx_flash.o              334
     stm32f4xx_gpio.o               182
-    stm32f4xx_it.o                 276        9       28
+    stm32f4xx_it.o                 280        9       28
     stm32f4xx_rcc.o                240        4       16
     stm32f4xx_tim.o                266
     stm32f4xx_usart.o              314
     system_stm32f4xx.o             236        6       20
     ----------------------------------------------------
-    Total:                       5'040       40      148
+    Total:                       5'044       40      148
 
 dl7M_tln.a: [2]
     exit.o                           4
@@ -369,7 +369,7 @@ shb_l.a: [5]
     Gaps                            12        2
     Linker created                           16    1'024
 --------------------------------------------------------
-    Grand Total:                 5'262       58    1'172
+    Grand Total:                 5'266       58    1'172
 
 
 *******************************************************************************
@@ -378,9 +378,9 @@ shb_l.a: [5]
 
 Entry                       Address   Size  Type      Object
 -----                       -------   ----  ----      ------
-.iar.init_table$$Base    0x800'12b0          --   Gb  - Linker created -
-.iar.init_table$$Limit   0x800'12c0          --   Gb  - Linker created -
-?main                    0x800'12c1         Code  Gb  cmain.o [4]
+.iar.init_table$$Base    0x800'12b4          --   Gb  - Linker created -
+.iar.init_table$$Limit   0x800'12c4          --   Gb  - Linker created -
+?main                    0x800'12c5         Code  Gb  cmain.o [4]
 AHBPrescTable           0x2000'0058   0x10  Data  Gb  system_stm32f4xx.o [1]
 APBAHBPrescTable        0x2000'0048   0x10  Data  Lc  stm32f4xx_rcc.o [1]
 BusFault_Handler         0x800'111f    0x2  Code  Gb  stm32f4xx_it.o [1]
@@ -429,8 +429,8 @@ RCC_AHB1PeriphClockCmd   0x800'06f1   0x14  Code  Gb  stm32f4xx_rcc.o [1]
 RCC_APB1PeriphClockCmd   0x800'0705   0x14  Code  Gb  stm32f4xx_rcc.o [1]
 RCC_GetClocksFreq        0x800'0641   0x90  Code  Gb  stm32f4xx_rcc.o [1]
 ReadFromFlash            0x800'0ae5   0x16  Code  Gb  flash.o [1]
-Region$$Table$$Base      0x800'12b0          --   Gb  - Linker created -
-Region$$Table$$Limit     0x800'12c0          --   Gb  - Linker created -
+Region$$Table$$Base      0x800'12b4          --   Gb  - Linker created -
+Region$$Table$$Limit     0x800'12c4          --   Gb  - Linker created -
 SVC_Handler              0x800'1123    0x2  Code  Gb  stm32f4xx_it.o [1]
 StopEntry                0x800'0557   0x14  Code  Gb  Config.o [1]
 StopExit                 0x800'058b   0x16  Code  Gb  Config.o [1]
@@ -445,7 +445,7 @@ TIM_TimeBaseInit         0x800'098d   0x62  Code  Gb  stm32f4xx_tim.o [1]
 TM_PWM_Init              0x800'03fd   0x28  Code  Gb  Config.o [1]
 TM_TIMER_Init            0x800'03d5   0x28  Code  Gb  Config.o [1]
 TimingDelay_Decrement    0x800'0fe5    0xe  Code  Gb  main.o [1]
-UART5_IRQHandler         0x800'1137   0xea  Code  Gb  stm32f4xx_it.o [1]
+UART5_IRQHandler         0x800'1137   0xee  Code  Gb  stm32f4xx_it.o [1]
 USART_Cmd                0x800'0891   0x14  Code  Gb  stm32f4xx_usart.o [1]
 USART_GetITStatus        0x800'08e5   0x3e  Code  Gb  stm32f4xx_usart.o [1]
 USART_ITConfig           0x800'08b3   0x32  Code  Gb  stm32f4xx_usart.o [1]
@@ -453,32 +453,33 @@ USART_Init               0x800'07e9   0x9e  Code  Gb  stm32f4xx_usart.o [1]
 USART_ReceiveData        0x800'08a5    0x8  Code  Gb  stm32f4xx_usart.o [1]
 UsageFault_Handler       0x800'1121    0x2  Code  Gb  stm32f4xx_it.o [1]
 WriteToFlash             0x800'0a99   0x4c  Code  Gb  flash.o [1]
-__cmain                  0x800'12c1         Code  Gb  cmain.o [4]
-__exit                   0x800'12f5   0x14  Code  Gb  exit.o [5]
-__iar_data_init3         0x800'1265   0x28  Code  Gb  data_init.o [4]
-__iar_init_vfp           0x800'128d         Code  Gb  fpinit_M.o [3]
+__cmain                  0x800'12c5         Code  Gb  cmain.o [4]
+__exit                   0x800'12f9   0x14  Code  Gb  exit.o [5]
+__iar_data_init3         0x800'1269   0x28  Code  Gb  data_init.o [4]
+__iar_init_vfp           0x800'1291         Code  Gb  fpinit_M.o [3]
 __iar_packbits_init_single3
-                         0x800'122d   0x38  Code  Gb  packbits_init_single.o [4]
-__iar_program_start      0x800'1319         Code  Gb  cstartup_M.o [4]
-__low_level_init         0x800'12df    0x4  Code  Gb  low_level_init.o [2]
+                         0x800'1231   0x38  Code  Gb  packbits_init_single.o [4]
+__iar_program_start      0x800'131d         Code  Gb  cstartup_M.o [4]
+__low_level_init         0x800'12e3    0x4  Code  Gb  low_level_init.o [2]
 __vector_table           0x800'0000         Data  Gb  startup_stm32f413_423xx.o [1]
-_call_main               0x800'12cd         Code  Gb  cmain.o [4]
-_exit                    0x800'12e9         Code  Gb  cexit.o [4]
-_main                    0x800'12db         Code  Gb  cmain.o [4]
+_call_main               0x800'12d1         Code  Gb  cmain.o [4]
+_exit                    0x800'12ed         Code  Gb  cexit.o [4]
+_main                    0x800'12df         Code  Gb  cmain.o [4]
 aLastState              0x2000'0010    0x4  Data  Gb  main.o [1]
 aState                  0x2000'0014    0x4  Data  Gb  main.o [1]
 count                   0x2000'0004    0x4  Data  Gb  main.o [1]
 counter                 0x2000'0018    0x4  Data  Gb  main.o [1]
 counter_buf             0x2000'001c    0x4  Data  Gb  main.o [1]
-curr_pos_of_gate        0x2000'0038    0x1  Data  Gb  stm32f4xx_it.o [1]
+curr_pos_of_gate        0x2000'0039    0x1  Data  Gb  stm32f4xx_it.o [1]
 direction               0x2000'0036    0x1  Data  Gb  stm32f4xx_it.o [1]
 enc_pos                 0x2000'0090    0x4  Data  Gb  stm32f4xx_it.o [1]
-exit                     0x800'12e3    0x4  Code  Gb  exit.o [2]
+exit                     0x800'12e7    0x4  Code  Gb  exit.o [2]
 fire                    0x2000'0037    0x1  Data  Gb  stm32f4xx_it.o [1]
 fire_exit               0x2000'0024    0x4  Data  Gb  main.o [1]
 flag                    0x2000'003c    0x4  Data  Gb  stm32f4xx_it.o [1]
 flash_flag              0x2000'0028    0x4  Data  Gb  main.o [1]
 free                    0x2000'0034    0x1  Data  Gb  stm32f4xx_it.o [1]
+id                      0x2000'0038    0x1  Data  Gb  stm32f4xx_it.o [1]
 is_gate_moving          0x2000'0044    0x4  Data  Gb  stm32f4xx_it.o [1]
 lastcounter             0x2000'000c    0x4  Data  Gb  main.o [1]
 main                     0x800'0c6d   0x86  Code  Gb  main.o [1]
@@ -495,13 +496,13 @@ uwTimingDelay           0x2000'002c    0x4  Data  Lc  main.o [1]
 x                       0x2000'0040    0x4  Data  Gb  stm32f4xx_it.o [1]
 
 
-[1] = E:\New Slave PCB\SwingBarrier_Right\STM32F4xx_DSP_StdPeriph_Lib_V1.8.0\Project\STM32F4xx_StdPeriph_Templates\EWARM\STM32F413_423xx\Obj
+[1] = E:\GIT\New Slave PCB\SwingBarrier_Right\STM32F4xx_DSP_StdPeriph_Lib_V1.8.0\Project\STM32F4xx_StdPeriph_Templates\EWARM\STM32F413_423xx\Obj
 [2] = dl7M_tln.a
 [3] = m7M_tls.a
 [4] = rt7M_tl.a
 [5] = shb_l.a
 
-  5'262 bytes of readonly  code memory
+  5'266 bytes of readonly  code memory
      58 bytes of readonly  data memory
   1'172 bytes of readwrite data memory
 

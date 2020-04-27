@@ -1,16 +1,16 @@
-"E:\Final Project SWing Barrier\SYSTICK\Slave_Final\7.40.1\ST\STM32F4xx\STM32F4xx_DSP_StdPeriph_Lib\Project\STM32F4xx_StdPeriph_Templates\main.c"
+"E:\GIT\Final Project SWing Barrier\SYSTICK\Slave_Final\7.40.1\ST\STM32F4xx\STM32F4xx_DSP_StdPeriph_Lib\Project\STM32F4xx_StdPeriph_Templates\main.c"
 -std=c99
 -ferror-limit=100
 -I
-E:\Final Project SWing Barrier\SYSTICK\Slave_Final\7.40.1\ST\STM32F4xx\STM32F4xx_DSP_StdPeriph_Lib\Project\STM32F4xx_StdPeriph_Templates\EWARM\..
+E:\GIT\Final Project SWing Barrier\SYSTICK\Slave_Final\7.40.1\ST\STM32F4xx\STM32F4xx_DSP_StdPeriph_Lib\Project\STM32F4xx_StdPeriph_Templates\EWARM\..
 -I
-E:\Final Project SWing Barrier\SYSTICK\Slave_Final\7.40.1\ST\STM32F4xx\STM32F4xx_DSP_StdPeriph_Lib\Project\STM32F4xx_StdPeriph_Templates\EWARM\..\..\..\Libraries\CMSIS\Device\ST\STM32F4xx\Include
+E:\GIT\Final Project SWing Barrier\SYSTICK\Slave_Final\7.40.1\ST\STM32F4xx\STM32F4xx_DSP_StdPeriph_Lib\Project\STM32F4xx_StdPeriph_Templates\EWARM\..\..\..\Libraries\CMSIS\Device\ST\STM32F4xx\Include
 -I
-E:\Final Project SWing Barrier\SYSTICK\Slave_Final\7.40.1\ST\STM32F4xx\STM32F4xx_DSP_StdPeriph_Lib\Project\STM32F4xx_StdPeriph_Templates\EWARM\..\..\..\Libraries\STM32F4xx_StdPeriph_Driver\inc
+E:\GIT\Final Project SWing Barrier\SYSTICK\Slave_Final\7.40.1\ST\STM32F4xx\STM32F4xx_DSP_StdPeriph_Lib\Project\STM32F4xx_StdPeriph_Templates\EWARM\..\..\..\Libraries\STM32F4xx_StdPeriph_Driver\inc
 -I
-E:\Final Project SWing Barrier\SYSTICK\Slave_Final\7.40.1\ST\STM32F4xx\STM32F4xx_DSP_StdPeriph_Lib\Project\STM32F4xx_StdPeriph_Templates\EWARM\..\..\..\Utilities\STM32_EVAL\Common
+E:\GIT\Final Project SWing Barrier\SYSTICK\Slave_Final\7.40.1\ST\STM32F4xx\STM32F4xx_DSP_StdPeriph_Lib\Project\STM32F4xx_StdPeriph_Templates\EWARM\..\..\..\Utilities\STM32_EVAL\Common
 -I
-E:\Final Project SWing Barrier\SYSTICK\Slave_Final\7.40.1\ST\STM32F4xx\STM32F4xx_DSP_StdPeriph_Lib\Project\STM32F4xx_StdPeriph_Templates\EWARM\..\..\..\Utilities\STM32_EVAL\STM324x9I_EVAL
+E:\GIT\Final Project SWing Barrier\SYSTICK\Slave_Final\7.40.1\ST\STM32F4xx\STM32F4xx_DSP_StdPeriph_Lib\Project\STM32F4xx_StdPeriph_Templates\EWARM\..\..\..\Utilities\STM32_EVAL\STM324x9I_EVAL
 -I
 C:\Program Files (x86)\IAR Systems\Embedded Workbench 7.2\arm\CMSIS\Include
 -I
@@ -18,15 +18,15 @@ C:\Program Files (x86)\IAR Systems\Embedded Workbench 7.2\arm\inc
 -I
 C:\Program Files (x86)\IAR Systems\Embedded Workbench 7.2\arm\inc\c
 -I
-E:\Final Project SWing Barrier\SYSTICK\Slave_Final\7.40.1\ST\STM32F4xx\STM32F4xx_DSP_StdPeriph_Lib\Project\STM32F4xx_StdPeriph_Templates
+E:\GIT\Final Project SWing Barrier\SYSTICK\Slave_Final\7.40.1\ST\STM32F4xx\STM32F4xx_DSP_StdPeriph_Lib\Project\STM32F4xx_StdPeriph_Templates
 -I
-E:\Final Project SWing Barrier\SYSTICK\Slave_Final\7.40.1\ST\STM32F4xx\STM32F4xx_DSP_StdPeriph_Lib\Libraries\CMSIS\Device\ST\STM32F4xx\Include
+E:\GIT\Final Project SWing Barrier\SYSTICK\Slave_Final\7.40.1\ST\STM32F4xx\STM32F4xx_DSP_StdPeriph_Lib\Libraries\CMSIS\Device\ST\STM32F4xx\Include
 -I
-E:\Final Project SWing Barrier\SYSTICK\Slave_Final\7.40.1\ST\STM32F4xx\STM32F4xx_DSP_StdPeriph_Lib\Libraries\STM32F4xx_StdPeriph_Driver\inc
+E:\GIT\Final Project SWing Barrier\SYSTICK\Slave_Final\7.40.1\ST\STM32F4xx\STM32F4xx_DSP_StdPeriph_Lib\Libraries\STM32F4xx_StdPeriph_Driver\inc
 -I
-E:\Final Project SWing Barrier\SYSTICK\Slave_Final\7.40.1\ST\STM32F4xx\STM32F4xx_DSP_StdPeriph_Lib\Utilities\STM32_EVAL\Common
+E:\GIT\Final Project SWing Barrier\SYSTICK\Slave_Final\7.40.1\ST\STM32F4xx\STM32F4xx_DSP_StdPeriph_Lib\Utilities\STM32_EVAL\Common
 -I
-E:\Final Project SWing Barrier\SYSTICK\Slave_Final\7.40.1\ST\STM32F4xx\STM32F4xx_DSP_StdPeriph_Lib\Utilities\STM32_EVAL\STM324x9I_EVAL
+E:\GIT\Final Project SWing Barrier\SYSTICK\Slave_Final\7.40.1\ST\STM32F4xx\STM32F4xx_DSP_StdPeriph_Lib\Utilities\STM32_EVAL\STM324x9I_EVAL
 -I
 C:\Program Files (x86)\IAR Systems\Embedded Workbench 7.2\arm\CMSIS\Include
 -DUSE_STDPERIPH_DRIVER=1

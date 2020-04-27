@@ -44,6 +44,7 @@
   //vars for storing the commands sent by MASTER BOARD!
   int8_t free,speed,direction = -1;
   int8_t fire;
+  int8_t id;//identifier
   int enc_pos;
   int8_t curr_pos_of_gate = 0;//initial position
   int flag = 0;
@@ -174,70 +175,73 @@ void UART5_IRQHandler(void)
   {
     /*PLEASE SEE THE FRAME FORMAT*/
 
-    //<GateAlign><Speed><Direction><Fire>
-    if( x <= 3 )
+    //<Identifier byte><data><data>
+    if( x <= 2 )
       rx_array[x++] = USART_ReceiveData(UART5);
   }
-  if(x == 4)
+  if(x == 3)
   {
-    free = rx_array[0];//left gate side only
-    speed = rx_array[1];
-    direction = rx_array[2];
-    fire = rx_array[3];
-    
-    if(speed != 0)
+    id = rx_array[0];
+    if(id == 1)
+      free = rx_array[1];
+    else if (id == 2)
     {
-      if(fire == 1)
+      speed = rx_array[1];
+      direction = rx_array[2];
+    }
+    else if (id == 3)
+      fire = rx_array[1];
+    
+    if(fire == 1)
+    {
+      Config_PWM(speed,fire);
+      OpenCloseGates();
+    }
+    else if(fire_exit == 1)//to close the gate
+    {
+      Config_PWM(speed,fire);
+      OpenCloseGates();
+    }
+    else if((free == 0) && (fire_exit == 0))//should not execute this if the if case is true above..CHECK THIS
+    {
+      if((curr_pos_of_gate == 0) && (direction == 1))
       {
-        Config_PWM(speed,fire);
-        OpenCloseGates();
+        curr_pos_of_gate = 1;
+        flag = 1;
+        StopEntry();
+        StopExit();
+        GoGate();
       }
-      else if(fire_exit == 1)//to close the gate
+      else if((curr_pos_of_gate == 1) && (direction == 0))
       {
-        Config_PWM(speed,fire);
-        OpenCloseGates();
+        curr_pos_of_gate = 0;
+        flag = 1;
+        GoEntry();
+        GoExit();
+        StopGate();
       }
-      else if((free == 0) && (fire_exit == 0))//should not execute this if the if case is true above..CHECK THIS
+      else if((curr_pos_of_gate == 0) && (direction == 0))
       {
-        if((curr_pos_of_gate == 0) && (direction == 1))
-        {
-          curr_pos_of_gate = 1;
-          flag = 1;
-          StopEntry();
-          StopExit();
-          GoGate();
-        }
-        else if((curr_pos_of_gate == 1) && (direction == 0))
-        {
-          curr_pos_of_gate = 0;
-          flag = 1;
-          GoEntry();
-          GoExit();
-          StopGate();
-        }
-        else if((curr_pos_of_gate == 0) && (direction == 0))
-        {
-          curr_pos_of_gate = -1;
-          flag  = 1;
-          StopEntry();
-          StopExit();
-          GoGate();
-        }
-        else if((curr_pos_of_gate == -1) && (direction == 1))
-        {
-          curr_pos_of_gate = 0;
-          flag = 1;
-          GoEntry();
-          GoExit();
-          StopGate();
-        }
-        if (flag == 1)
-        {
-          Config_PWM(speed,0);
-          Motor_Logic(direction);
-          flag = 0;
-          is_gate_moving = 1;
-        }
+        curr_pos_of_gate = -1;
+        flag  = 1;
+        StopEntry();
+        StopExit();
+        GoGate();
+      }
+      else if((curr_pos_of_gate == -1) && (direction == 1))
+      {
+        curr_pos_of_gate = 0;
+        flag = 1;
+        GoEntry();
+        GoExit();
+        StopGate();
+      }
+      if (flag == 1)
+      {
+        Config_PWM(speed,0);
+        Motor_Logic(direction);
+        flag = 0;
+        is_gate_moving = 1;
       }
     }
     x = 0;

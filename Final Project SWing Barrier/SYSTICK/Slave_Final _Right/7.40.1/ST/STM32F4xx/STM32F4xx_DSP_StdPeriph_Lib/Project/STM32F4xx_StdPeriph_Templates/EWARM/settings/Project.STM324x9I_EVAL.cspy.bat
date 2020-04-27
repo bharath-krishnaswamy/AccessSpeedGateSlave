@@ -25,7 +25,7 @@ if not "%1" == "" goto debugFile
 
 @echo on 
 
-"C:\Program Files (x86)\IAR Systems\Embedded Workbench 7.2\common\bin\cspybat" -f "E:\Final Project SWing Barrier\SYSTICK\Slave_Final _Right\7.40.1\ST\STM32F4xx\STM32F4xx_DSP_StdPeriph_Lib\Project\STM32F4xx_StdPeriph_Templates\EWARM\settings\Project.STM324x9I_EVAL.general.xcl" --backend -f "E:\Final Project SWing Barrier\SYSTICK\Slave_Final _Right\7.40.1\ST\STM32F4xx\STM32F4xx_DSP_StdPeriph_Lib\Project\STM32F4xx_StdPeriph_Templates\EWARM\settings\Project.STM324x9I_EVAL.driver.xcl" 
+"C:\Program Files (x86)\IAR Systems\Embedded Workbench 7.2\common\bin\cspybat" -f "E:\GIT\Final Project SWing Barrier\SYSTICK\Slave_Final _Right\7.40.1\ST\STM32F4xx\STM32F4xx_DSP_StdPeriph_Lib\Project\STM32F4xx_StdPeriph_Templates\EWARM\settings\Project.STM324x9I_EVAL.general.xcl" --backend -f "E:\GIT\Final Project SWing Barrier\SYSTICK\Slave_Final _Right\7.40.1\ST\STM32F4xx\STM32F4xx_DSP_StdPeriph_Lib\Project\STM32F4xx_StdPeriph_Templates\EWARM\settings\Project.STM324x9I_EVAL.driver.xcl" 
 
 @echo off 
 goto end 
@@ -34,7 +34,7 @@ goto end
 
 @echo on 
 
-"C:\Program Files (x86)\IAR Systems\Embedded Workbench 7.2\common\bin\cspybat" -f "E:\Final Project SWing Barrier\SYSTICK\Slave_Final _Right\7.40.1\ST\STM32F4xx\STM32F4xx_DSP_StdPeriph_Lib\Project\STM32F4xx_StdPeriph_Templates\EWARM\settings\Project.STM324x9I_EVAL.general.xcl" "--debug_file=%1" --backend -f "E:\Final Project SWing Barrier\SYSTICK\Slave_Final _Right\7.40.1\ST\STM32F4xx\STM32F4xx_DSP_StdPeriph_Lib\Project\STM32F4xx_StdPeriph_Templates\EWARM\settings\Project.STM324x9I_EVAL.driver.xcl" 
+"C:\Program Files (x86)\IAR Systems\Embedded Workbench 7.2\common\bin\cspybat" -f "E:\GIT\Final Project SWing Barrier\SYSTICK\Slave_Final _Right\7.40.1\ST\STM32F4xx\STM32F4xx_DSP_StdPeriph_Lib\Project\STM32F4xx_StdPeriph_Templates\EWARM\settings\Project.STM324x9I_EVAL.general.xcl" "--debug_file=%1" --backend -f "E:\GIT\Final Project SWing Barrier\SYSTICK\Slave_Final _Right\7.40.1\ST\STM32F4xx\STM32F4xx_DSP_StdPeriph_Lib\Project\STM32F4xx_StdPeriph_Templates\EWARM\settings\Project.STM324x9I_EVAL.driver.xcl" 
 
 @echo off 
 :end

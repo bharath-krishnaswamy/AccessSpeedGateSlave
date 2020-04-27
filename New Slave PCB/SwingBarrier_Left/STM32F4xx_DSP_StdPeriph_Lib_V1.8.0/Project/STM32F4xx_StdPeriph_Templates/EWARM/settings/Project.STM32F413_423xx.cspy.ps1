@@ -23,9 +23,9 @@
 
 if ($debugfile -eq "")
 {
-& "C:\Program Files (x86)\IAR Systems\Embedded Workbench 8.4\common\bin\cspybat" -f "E:\New Slave PCB\SwingBarrier_Left\STM32F4xx_DSP_StdPeriph_Lib_V1.8.0\Project\STM32F4xx_StdPeriph_Templates\EWARM\settings\Project.STM32F413_423xx.general.xcl" --backend -f "E:\New Slave PCB\SwingBarrier_Left\STM32F4xx_DSP_StdPeriph_Lib_V1.8.0\Project\STM32F4xx_StdPeriph_Templates\EWARM\settings\Project.STM32F413_423xx.driver.xcl" 
+& "C:\Program Files (x86)\IAR Systems\Embedded Workbench 8.4\common\bin\cspybat" -f "E:\GIT\New Slave PCB\SwingBarrier_Left\STM32F4xx_DSP_StdPeriph_Lib_V1.8.0\Project\STM32F4xx_StdPeriph_Templates\EWARM\settings\Project.STM32F413_423xx.general.xcl" --backend -f "E:\GIT\New Slave PCB\SwingBarrier_Left\STM32F4xx_DSP_StdPeriph_Lib_V1.8.0\Project\STM32F4xx_StdPeriph_Templates\EWARM\settings\Project.STM32F413_423xx.driver.xcl" 
 }
 else
 {
-& "C:\Program Files (x86)\IAR Systems\Embedded Workbench 8.4\common\bin\cspybat" -f "E:\New Slave PCB\SwingBarrier_Left\STM32F4xx_DSP_StdPeriph_Lib_V1.8.0\Project\STM32F4xx_StdPeriph_Templates\EWARM\settings\Project.STM32F413_423xx.general.xcl" --debug_file=$debugfile --backend -f "E:\New Slave PCB\SwingBarrier_Left\STM32F4xx_DSP_StdPeriph_Lib_V1.8.0\Project\STM32F4xx_StdPeriph_Templates\EWARM\settings\Project.STM32F413_423xx.driver.xcl" 
+& "C:\Program Files (x86)\IAR Systems\Embedded Workbench 8.4\common\bin\cspybat" -f "E:\GIT\New Slave PCB\SwingBarrier_Left\STM32F4xx_DSP_StdPeriph_Lib_V1.8.0\Project\STM32F4xx_StdPeriph_Templates\EWARM\settings\Project.STM32F413_423xx.general.xcl" --debug_file=$debugfile --backend -f "E:\GIT\New Slave PCB\SwingBarrier_Left\STM32F4xx_DSP_StdPeriph_Lib_V1.8.0\Project\STM32F4xx_StdPeriph_Templates\EWARM\settings\Project.STM32F413_423xx.driver.xcl" 
 }

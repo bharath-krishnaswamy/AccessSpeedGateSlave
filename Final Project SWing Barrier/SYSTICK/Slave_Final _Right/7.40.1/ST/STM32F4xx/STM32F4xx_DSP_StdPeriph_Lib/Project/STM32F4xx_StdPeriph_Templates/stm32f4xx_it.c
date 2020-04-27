@@ -29,6 +29,7 @@
   int enc_pos;
   int8_t curr_pos_of_gate = 0;//initial position
   int flag = 0;
+  uint8_t id;
   int x = 0; //index of the receptioon array
   int is_gate_moving = 0;
 /* Private function prototypes -----------------------------------------------*/
@@ -141,20 +142,26 @@ void SysTick_Handler(void)
 
 void USART2_IRQHandler(void)
 {
-  if(USART_GetITStatus(USART2, USART_IT_RXNE) != RESET)
+if(USART_GetITStatus(UART5, USART_IT_RXNE) != RESET)
   {
     /*PLEASE SEE THE FRAME FORMAT*/
 
-    //<GateAlign><Speed><Direction><Fire>
-    if( x <= 3 )
-      rx_array[x++] = USART_ReceiveData(USART2);
+    //<Identifier byte><data><data>
+    if( x <= 2 )
+      rx_array[x++] = USART_ReceiveData(UART5);
   }
-  if(x == 4)
+  if(x == 3)
   {
-    free = rx_array[0];//left gate side only
-    speed = rx_array[1];
-    direction = rx_array[2];
-    fire = rx_array[3];
+    id = rx_array[0];
+    if(id == 1)
+      free = rx_array[1];
+    else if (id == 2)
+    {
+      speed = rx_array[1];
+      direction = rx_array[2];
+    }
+    else if (id == 3)
+      fire = rx_array[1];
     
     if(fire == 1)
     {

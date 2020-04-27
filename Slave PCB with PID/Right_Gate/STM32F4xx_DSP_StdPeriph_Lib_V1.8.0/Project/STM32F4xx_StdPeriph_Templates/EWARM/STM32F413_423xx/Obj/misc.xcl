@@ -1,22 +1,22 @@
-"E:\Slave PCB with PID\Right_Gate\STM32F4xx_DSP_StdPeriph_Lib_V1.8.0\Libraries\STM32F4xx_StdPeriph_Driver\src\misc.c"
+"E:\GIT\Slave PCB with PID\Right_Gate\STM32F4xx_DSP_StdPeriph_Lib_V1.8.0\Libraries\STM32F4xx_StdPeriph_Driver\src\misc.c"
 -std=c11
 -ferror-limit=0
 -fbracket-depth=512
 -MD
 -MF
-E:\Slave PCB with PID\Right_Gate\STM32F4xx_DSP_StdPeriph_Lib_V1.8.0\Project\STM32F4xx_StdPeriph_Templates\EWARM\STM32F413_423xx\Obj\misc.pbi.dep
+E:\GIT\Slave PCB with PID\Right_Gate\STM32F4xx_DSP_StdPeriph_Lib_V1.8.0\Project\STM32F4xx_StdPeriph_Templates\EWARM\STM32F413_423xx\Obj\misc.pbi.dep
 -o
 misc.pbi
 -I
-E:\Slave PCB with PID\Right_Gate\STM32F4xx_DSP_StdPeriph_Lib_V1.8.0\Libraries\STM32F4xx_StdPeriph_Driver\src
+E:\GIT\Slave PCB with PID\Right_Gate\STM32F4xx_DSP_StdPeriph_Lib_V1.8.0\Libraries\STM32F4xx_StdPeriph_Driver\src
 -I
-E:\Slave PCB with PID\Right_Gate\STM32F4xx_DSP_StdPeriph_Lib_V1.8.0\Project\STM32F4xx_StdPeriph_Templates\EWARM\..
+E:\GIT\Slave PCB with PID\Right_Gate\STM32F4xx_DSP_StdPeriph_Lib_V1.8.0\Project\STM32F4xx_StdPeriph_Templates\EWARM\..
 -I
-E:\Slave PCB with PID\Right_Gate\STM32F4xx_DSP_StdPeriph_Lib_V1.8.0\Project\STM32F4xx_StdPeriph_Templates\EWARM\..\..\..\Libraries\CMSIS\Device\ST\STM32F4xx\Include
+E:\GIT\Slave PCB with PID\Right_Gate\STM32F4xx_DSP_StdPeriph_Lib_V1.8.0\Project\STM32F4xx_StdPeriph_Templates\EWARM\..\..\..\Libraries\CMSIS\Device\ST\STM32F4xx\Include
 -I
-E:\Slave PCB with PID\Right_Gate\STM32F4xx_DSP_StdPeriph_Lib_V1.8.0\Project\STM32F4xx_StdPeriph_Templates\EWARM\..\..\..\Libraries\STM32F4xx_StdPeriph_Driver\inc
+E:\GIT\Slave PCB with PID\Right_Gate\STM32F4xx_DSP_StdPeriph_Lib_V1.8.0\Project\STM32F4xx_StdPeriph_Templates\EWARM\..\..\..\Libraries\STM32F4xx_StdPeriph_Driver\inc
 -I
-E:\Slave PCB with PID\Right_Gate\STM32F4xx_DSP_StdPeriph_Lib_V1.8.0\Project\STM32F4xx_StdPeriph_Templates\EWARM\..\..\..\Utilities\STM32_EVAL\Common
+E:\GIT\Slave PCB with PID\Right_Gate\STM32F4xx_DSP_StdPeriph_Lib_V1.8.0\Project\STM32F4xx_StdPeriph_Templates\EWARM\..\..\..\Utilities\STM32_EVAL\Common
 -I
 C:\Program Files (x86)\IAR Systems\Embedded Workbench 8.4\arm\CMSIS\Core\Include
 -I
@@ -26,13 +26,13 @@ C:\Program Files (x86)\IAR Systems\Embedded Workbench 8.4\arm\inc
 -I
 C:\Program Files (x86)\IAR Systems\Embedded Workbench 8.4\arm\inc\c
 -I
-E:\Slave PCB with PID\Right_Gate\STM32F4xx_DSP_StdPeriph_Lib_V1.8.0\Project\STM32F4xx_StdPeriph_Templates
+E:\GIT\Slave PCB with PID\Right_Gate\STM32F4xx_DSP_StdPeriph_Lib_V1.8.0\Project\STM32F4xx_StdPeriph_Templates
 -I
-E:\Slave PCB with PID\Right_Gate\STM32F4xx_DSP_StdPeriph_Lib_V1.8.0\Libraries\CMSIS\Device\ST\STM32F4xx\Include
+E:\GIT\Slave PCB with PID\Right_Gate\STM32F4xx_DSP_StdPeriph_Lib_V1.8.0\Libraries\CMSIS\Device\ST\STM32F4xx\Include
 -I
-E:\Slave PCB with PID\Right_Gate\STM32F4xx_DSP_StdPeriph_Lib_V1.8.0\Libraries\STM32F4xx_StdPeriph_Driver\inc
+E:\GIT\Slave PCB with PID\Right_Gate\STM32F4xx_DSP_StdPeriph_Lib_V1.8.0\Libraries\STM32F4xx_StdPeriph_Driver\inc
 -I
-E:\Slave PCB with PID\Right_Gate\STM32F4xx_DSP_StdPeriph_Lib_V1.8.0\Utilities\STM32_EVAL\Common
+E:\GIT\Slave PCB with PID\Right_Gate\STM32F4xx_DSP_StdPeriph_Lib_V1.8.0\Utilities\STM32_EVAL\Common
 -I
 C:\Program Files (x86)\IAR Systems\Embedded Workbench 8.4\arm\CMSIS\Core\Include
 -I
