@@ -190,58 +190,63 @@ void UART5_IRQHandler(void)
       direction = rx_array[2];
     }
     else if (id == 3)
-      fire = rx_array[1];
-   
-    if(fire == 1)
     {
-      Config_PWM(speed,fire);
-      OpenCloseGates();
+      speed = rx_array[1];
+      fire = rx_array[2];
     }
-    else if(fire_exit == 1)//to close the gate
+    if(id != 1)
     {
-      Config_PWM(speed,fire);
-      OpenCloseGates();
-    }
-    else if((free == 0) && (fire_exit == 0))//should not execute this if the if case is true above..CHECK THIS
-    {
-      if((curr_pos_of_gate == 0) && (direction == 1))
+      if(fire == 1)
       {
-        curr_pos_of_gate = 1;
-        flag = 1;
-        StopEntry();
-        StopExit();
-        GoGate();
+        Config_PWM(speed,fire);
+        OpenCloseGates();
       }
-      else if((curr_pos_of_gate == 1) && (direction == 0))
+      else if(fire_exit == 1)//to close the gate
       {
-        curr_pos_of_gate = 0;
-        flag = 1;
-        GoEntry();
-        GoExit();
-        StopGate();
+        Config_PWM(speed,fire);
+        OpenCloseGates();
       }
-      else if((curr_pos_of_gate == 0) && (direction == 0))
+      else if((free == 0) && (fire_exit == 0))//should not execute this if the if case is true above..CHECK THIS
       {
-        curr_pos_of_gate = -1;
-        flag  = 1;
-        StopEntry();
-        StopExit();
-        GoGate();
-      }
-      else if((curr_pos_of_gate == -1) && (direction == 1))
-      {
-        curr_pos_of_gate = 0;
-        flag = 1;
-        GoEntry();
-        GoExit();
-        StopGate();
-      }
-      if (flag == 1)
-      {
-        Config_PWM(speed,0);
-        Motor_Logic(direction);
-        flag = 0;
-        is_gate_moving = 1;
+        if((curr_pos_of_gate == 0) && (direction == 1))
+        {
+          curr_pos_of_gate = 1;
+          flag = 1;
+          StopEntry();
+          StopExit();
+          GoGate();
+        }
+        else if((curr_pos_of_gate == 1) && (direction == 0))
+        {
+          curr_pos_of_gate = 0;
+          flag = 1;
+          GoEntry();
+          GoExit();
+          StopGate();
+        }
+        else if((curr_pos_of_gate == 0) && (direction == 0))
+        {
+          curr_pos_of_gate = -1;
+          flag  = 1;
+          StopEntry();
+          StopExit();
+          GoGate();
+        }
+        else if((curr_pos_of_gate == -1) && (direction == 1))
+        {
+          curr_pos_of_gate = 0;
+          flag = 1;
+          GoEntry();
+          GoExit();
+          StopGate();
+        }
+        if (flag == 1)
+        {
+          Config_PWM(speed,0);
+          Motor_Logic(direction);
+          flag = 0;
+          is_gate_moving = 1;
+        }
       }
     }
     x = 0;
