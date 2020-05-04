@@ -60,7 +60,7 @@ float pid_error,duty;
 arm_pid_instance_f32 PID;
 static __IO uint32_t uwTimingDelay;
 RCC_ClocksTypeDef RCC_Clocks;
- 
+ extern int8_t fire;
 /* Private function prototypes -----------------------------------------------*/
 static void Delay(__IO uint32_t nTime);
 
@@ -177,7 +177,7 @@ void Encoder_Logic(void)
       lastcounter = counter;
       counter ++;//absolute position variable
       position ++;//reference variable
-      if((free == 1) && (flash_flag == 0) && (fire_exit == 0))
+      if((free == 1) && (flash_flag == 0) && (fire == 0))
         counter_buf ++;
     }
     else 
@@ -185,7 +185,7 @@ void Encoder_Logic(void)
       lastcounter = counter;
       counter --;
       position --;
-      if((free == 1) && (flash_flag == 0) && (fire_exit == 0))
+      if((free == 1) && (flash_flag == 0) && (fire == 0))
         counter_buf --;
     }
     Flash_Data_Write_Buffer[0] = counter;
@@ -335,18 +335,21 @@ void ErrorCheckEncoder(void)
 
 void OpenCloseGates(void)
 {
-  if(fire_exit == 0)
-  {
-    direction = 1;
-    EngageBrakes();
-    position = enc_pos;//from Config_PWM(_,_)
+  direction = 1;
+  EngageBrakes();
+  position = enc_pos;//from Config_PWM(_,_)
+  if (fire == 1)
+    Dir_AntiClkwise();
+  else if (fire == 0)
     Dir_Clkwise();
-    DisEngageBrakes();
-    TIM_Cmd(TIM12, ENABLE);
-    is_gate_moving = 1;
-    StopEntry();
-    StopExit();
-    GoGate();
+  DisEngageBrakes();
+  TIM_Cmd(TIM12, ENABLE);
+  is_gate_moving = 1;
+  StopEntry();
+  StopExit();
+  GoGate();
+  if (fire == 1)
+  {
     while(position != -180)
     {
       pid_error = (ANGLE_WANTED + position);
@@ -357,28 +360,9 @@ void OpenCloseGates(void)
         duty = 0;
       adjust_pwm(duty);
     }
-    EngageBrakes();
-    TIM_Cmd(TIM12, DISABLE);
-    oldcount = count;
-    is_gate_moving = 0;
-    GoEntry();
-    GoExit();
-    StopGate();
- 
-    fire_exit = 1;
   }
-  else if ( fire_exit == 1 )
+  else if (fire == 0)
   {
-    direction = 0;
-    EngageBrakes();
-    position = enc_pos;//from Config_PWM(_,_)
-    Dir_AntiClkwise();
-    DisEngageBrakes();
-    TIM_Cmd(TIM12, ENABLE);
-    is_gate_moving = 1;
-    StopEntry();
-    StopExit();
-    GoGate();
     while(position != 0)
     {
       pid_error = (position);
@@ -389,16 +373,15 @@ void OpenCloseGates(void)
         duty = 0;
       adjust_pwm(duty);
     }
-    EngageBrakes();
-    TIM_Cmd(TIM12, DISABLE);
-    oldcount = count;
-    is_gate_moving = 0;
-    GoEntry();
-    GoExit();
-    StopGate();
-
-    fire_exit = 0;
   }
+  EngageBrakes();
+  TIM_Cmd(TIM12, DISABLE);
+  oldcount = count;
+  is_gate_moving = 0;
+  GoEntry();
+  GoExit();
+  StopGate();
+  
 }
 
 

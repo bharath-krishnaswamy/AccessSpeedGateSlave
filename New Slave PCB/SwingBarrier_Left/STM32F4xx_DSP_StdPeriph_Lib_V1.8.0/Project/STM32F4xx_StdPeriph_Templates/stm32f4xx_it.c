@@ -186,27 +186,22 @@ void UART5_IRQHandler(void)
       free = rx_array[1];
     else if (id == 2)
     {
-      speed = rx_array[1];
-      direction = rx_array[2];
+      direction = rx_array[1];
+      speed = rx_array[2];
     }
     else if (id == 3)
     {
-      speed = rx_array[1];
-      fire = rx_array[2];
+      fire = rx_array[1];
+      speed = rx_array[2];
     }
     if(id != 1)
     {
-      if(fire == 1)
+      if(id == 3)
       {
         Config_PWM(speed,fire);
         OpenCloseGates();
       }
-      else if(fire_exit == 1)//to close the gate
-      {
-        Config_PWM(speed,fire);
-        OpenCloseGates();
-      }
-      else if((free == 0) && (fire_exit == 0))//should not execute this if the if case is true above..CHECK THIS
+      else if((free == 0) && (fire == 0))//should not execute this if the if case is true above..CHECK THIS
       {
         if((curr_pos_of_gate == 0) && (direction == 1))
         {

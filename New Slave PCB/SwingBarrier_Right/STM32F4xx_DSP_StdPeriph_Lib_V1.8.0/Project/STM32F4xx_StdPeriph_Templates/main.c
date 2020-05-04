@@ -51,6 +51,7 @@ int counter_buf = 0;
 int position = 0;
 int fire_exit = 0;
 int flash_flag = 1;
+extern int8_t fire;
 
 static __IO uint32_t uwTimingDelay;
 RCC_ClocksTypeDef RCC_Clocks;
@@ -204,7 +205,7 @@ void Encoder_Logic(void)
       lastcounter = counter;
       counter ++;//absolute position variable
       position ++;//reference variable
-      if((free == 1) && (flash_flag == 0) && (fire_exit == 0))
+      if((free == 1) && (flash_flag == 0) && (fire == 0))
         counter_buf ++;
     }
     else 
@@ -212,7 +213,7 @@ void Encoder_Logic(void)
       lastcounter = counter;
       counter --;
       position --;
-      if((free == 1) && (flash_flag == 0) && (fire_exit == 0))
+      if((free == 1) && (flash_flag == 0) && (fire == 0))
         counter_buf --;
     }
     Flash_Data_Write_Buffer[0] = counter;
@@ -367,70 +368,41 @@ void ErrorCheckEncoder(void)
 
 void OpenCloseGates(void)
 {
-  if(fire_exit == 0)
-  {
-    direction = 0;
-    EngageBrakes();
-    position = enc_pos;//from Config_PWM(_,_)
+  //    direction = 0;
+  EngageBrakes();
+  position = enc_pos;//from Config_PWM(_,_)
+  if ( fire == 1 )
     Dir_AntiClkwise();
-    DisEngageBrakes();
-    TIM_Cmd(TIM12, ENABLE);
-    is_gate_moving = 1;
-    StopEntry();
-    StopExit();
-    GoGate();
-//    if(position == -180)
-//    {
-//      EngageBrakes();
-//      TIM_Cmd(TIM4, DISABLE);
-//      oldcount = count;
-//      is_gate_moving = 0;
-//      GoEntry();
-//      GoExit();
-//      StopGate();
-//    }
-    while(position != -180);
-    EngageBrakes();
-    TIM_Cmd(TIM4, DISABLE);
-    oldcount = count;
-    is_gate_moving = 0;
-    GoEntry();
-    GoExit();
-    StopGate();
-    fire_exit = 1;
-  }
-  else if ( fire_exit == 1 )
-  {
-    direction = 1;
-    EngageBrakes();
-    position = -enc_pos;//from Config_PWM(_,_)
+  else if ( fire == 0 )
     Dir_Clkwise();
-    DisEngageBrakes();
-    TIM_Cmd(TIM12, ENABLE);
-    is_gate_moving = 1;
-    StopEntry();
-    StopExit();
-    GoGate();
-//    if(position == 0)
-//    {
-//      EngageBrakes();
-//      TIM_Cmd(TIM4, DISABLE);
-//      oldcount = count;
-//      is_gate_moving = 0;
-//      GoEntry();
-//      GoExit();
-//      StopGate();
-//    }
-    while(position != 0 );
-    EngageBrakes();
-    TIM_Cmd(TIM4, DISABLE);
-    oldcount = count;
-    is_gate_moving = 0;
-    GoEntry();
-    GoExit();
-    StopGate();
-    fire_exit = 0;
-  }
+  DisEngageBrakes();
+  TIM_Cmd(TIM12, ENABLE);
+  is_gate_moving = 1;
+  StopEntry();
+  StopExit();
+  GoGate();
+  //    if(position == -180)
+  //    {
+  //      EngageBrakes();
+  //      TIM_Cmd(TIM4, DISABLE);
+  //      oldcount = count;
+  //      is_gate_moving = 0;
+  //      GoEntry();
+  //      GoExit();
+  //      StopGate();
+  //    }
+  if ( fire == 1 )
+    while(position != -180);
+  else if ( fire == 0 )
+    while( position != 0 );
+  EngageBrakes();
+  TIM_Cmd(TIM4, DISABLE);
+  oldcount = count;
+  is_gate_moving = 0;
+  GoEntry();
+  GoExit();
+  StopGate();
+  //fire_exit = 1;
 }
 /**
   * @brief  Inserts a delay time.
