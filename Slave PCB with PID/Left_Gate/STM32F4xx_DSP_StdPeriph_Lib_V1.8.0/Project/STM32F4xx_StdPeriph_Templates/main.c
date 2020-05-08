@@ -120,6 +120,7 @@ void Motor_Logic(uint8_t x)
       position = counter_buf;
       DisEngageBrakes(); //brake set
       TIM_Cmd(TIM12, ENABLE);
+      init_pid();
       
       while((position != - ANGLE_WANTED)){
         pid_error = (position + ANGLE_WANTED);
@@ -142,6 +143,7 @@ void Motor_Logic(uint8_t x)
       position = counter_buf; 
       DisEngageBrakes(); 
       TIM_Cmd(TIM12, ENABLE);
+      init_pid();
       while((position != ANGLE_WANTED))
       {
         pid_error = (ANGLE_WANTED - position);
@@ -222,67 +224,37 @@ void Init_Sequence(void)
   ReadFromFlash();
   int temp = Flash_Data_Read_Buffer[0];
   is_gate_moving = 1;
-  if( temp < -10 )
-  {
-    direction = 1;
-    enc_pos = temp ;//+ (temp / 36);//Collectively takes care of every testcase...pls check
+  direction = 1;
+  enc_pos = temp ;//+ (temp / 36);//Collectively takes care of every testcase...pls check
+  if( temp < 10 )
     Dir_Clkwise();
-    position = enc_pos;
-    DisEngageBrakes(); 
-    TIM_Cmd(TIM12, ENABLE);
-    StopEntry();
-    StopExit();
-    GoGate();
-    while(position != 0)
-    {   
-      pid_error = (position);
-      duty = arm_pid_f32(&PID, pid_error);
-      if(duty > width_pwm)
-        duty = width_pwm;
-      else if(duty <0)
-        duty = 0;
-      adjust_pwm(duty);
-    }
-    EngageBrakes();
-    TIM_Cmd(TIM12, DISABLE);
-    Delay(200);
-    oldcount = count;
-    is_gate_moving = 0;
-    GoEntry();
-    GoExit();
-    StopGate();
-  }
   else if ( temp > 10 )
-  {
-    direction = 0;
-    enc_pos = temp;// - (temp / 36);
     Dir_AntiClkwise();
-    position = enc_pos;
-    DisEngageBrakes();
-    TIM_Cmd(TIM12, ENABLE);
-    StopEntry();
-    StopExit();
-    GoGate();
-    while(position != 0)
-    {
-      pid_error = (position);
-      duty = arm_pid_f32(&PID, pid_error);
-      if(duty > width_pwm)
-        duty = width_pwm;
-      else if(duty <0)
-        duty = 0;
-      adjust_pwm(duty);
-    }
-    EngageBrakes();
-    TIM_Cmd(TIM12, DISABLE);
-    Delay(200);
-    oldcount = count;
-    is_gate_moving = 0;
-    GoEntry();
-    GoExit();
-    StopGate();
+  position = enc_pos;
+  DisEngageBrakes(); 
+  TIM_Cmd(TIM12, ENABLE);
+  init_pid();
+  StopEntry();
+  StopExit();
+  StopGate();
+  while(position != 0)
+  {   
+    pid_error = (position);
+    duty = arm_pid_f32(&PID, pid_error);
+    if(duty > width_pwm)
+      duty = width_pwm;
+    else if(duty <0)
+      duty = 0;
+    adjust_pwm(duty);
   }
-  
+  EngageBrakes();
+  TIM_Cmd(TIM12, DISABLE);
+  Delay(200);
+  oldcount = count;
+  is_gate_moving = 0;
+  GoEntry();
+  GoExit();
+  StopGate();  
 }
 /**
   * @brief  Checks for any errors like intrusion of the system
@@ -344,6 +316,7 @@ void OpenCloseGates(void)
     Dir_AntiClkwise();
   DisEngageBrakes();
   TIM_Cmd(TIM12, ENABLE);
+  init_pid();
   is_gate_moving = 1;
   StopEntry();
   StopExit();
@@ -382,37 +355,6 @@ void OpenCloseGates(void)
   GoExit();
   StopGate();
 }
-
-
-/**
-  * @brief  Initializes the PID structure.
-  * @param  None
-  * @retval None
-  */
-void init_pid(void)
-{
-  PID.A0 = PID.Kd + PID.Ki + PID.Kp;
-  PID.A1 = - (PID.Kp) - (2 * PID.Kd);
-  PID.A2 = PID.Kd;
-  PID.state[0] = 0;
-  PID.state[1] = 0;
-  PID.state[2] = 0;
-}
-
-void adjust_pwm(float x)
-{
-  TIM_Cmd(TIM12, DISABLE);
-  int temp = (int)x;
-  TIM_OCInitTypeDef TIM_OCStruct; 
-  TIM_OCStruct.TIM_OCMode = TIM_OCMode_PWM2;
-  TIM_OCStruct.TIM_OutputState = TIM_OutputState_Enable;
-  TIM_OCStruct.TIM_OCPolarity = TIM_OCPolarity_Low;
-  TIM_OCStruct.TIM_Pulse = temp;
-  TIM_OC1Init(TIM12, &TIM_OCStruct);
-  TIM_OC1PreloadConfig(TIM12, TIM_OCPreload_Enable);
-  TIM_Cmd(TIM12, ENABLE);
-}
-
 
 /**
   * @brief  Inserts a delay time.

@@ -3,7 +3,7 @@
 #include "stm32f4xx_gpio.h"
 
 GPIO_InitTypeDef  GPIO_InitStructure;
-extern int fire_exit;
+extern arm_pid_instance_f32 PID;
 int width_pwm;
 void GPIO_Config(void)
 {
@@ -222,6 +222,40 @@ void Config_PWM(uint8_t x, uint8_t f)
   TIM_OC1Init(TIM12, &TIM_OCStruct);
   TIM_OC1PreloadConfig(TIM12, TIM_OCPreload_Enable);
   width_pwm = 249 + (x * 250);
+}
+
+/**
+  * @brief  Initializes the PID structure.
+  * @param  None
+  * @retval None
+  */
+void init_pid(void)
+{
+  PID.A0 = PID.Kd + PID.Ki + PID.Kp;
+  PID.A1 = - (PID.Kp) - (2 * PID.Kd);
+  PID.A2 = PID.Kd;
+  PID.state[0] = 0;
+  PID.state[1] = 0;
+  PID.state[2] = 0;
+}
+
+/**
+  * @brief  Reconfiguration of PWM based on PID output
+  * @param  nTime: specifies the delay time length, in milliseconds.
+  * @retval None
+  */
+void adjust_pwm(float x)
+{
+  TIM_Cmd(TIM12, DISABLE);
+  int temp = (int)x;
+  TIM_OCInitTypeDef TIM_OCStruct; 
+  TIM_OCStruct.TIM_OCMode = TIM_OCMode_PWM2;
+  TIM_OCStruct.TIM_OutputState = TIM_OutputState_Enable;
+  TIM_OCStruct.TIM_OCPolarity = TIM_OCPolarity_Low;
+  TIM_OCStruct.TIM_Pulse = temp;
+  TIM_OC1Init(TIM12, &TIM_OCStruct);
+  TIM_OC1PreloadConfig(TIM12, TIM_OCPreload_Enable);
+  TIM_Cmd(TIM12, ENABLE);
 }
 
 
